@@ -1,0 +1,8 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/TEST_PROJ.sim/sim_1/synth/timing/xsim/carry_lookahead_adder_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module carry_lookahead_adder
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/SOURCE_FILES/carry_lookahead_adder_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-311] analyzing module carry_lookahead_adder
+WARNING: [VRFC 10-3609] overwriting previous definition of module 'carry_lookahead_adder' [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/SOURCE_FILES/carry_lookahead_adder.v:8]
+INFO: [VRFC 10-311] analyzing module carry_lookahead_adder_tb
