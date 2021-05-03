@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun May  2 23:12:23 2021
-# Process ID: 13556
-# Current directory: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/TEST_PROJ.runs/synth_1
-# Command line: vivado.exe -log carry_lookahead_adder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source carry_lookahead_adder.tcl
-# Log file: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/TEST_PROJ.runs/synth_1/carry_lookahead_adder.vds
-# Journal file: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/TEST_PROJ.runs/synth_1\vivado.jou
+# Start of session at: Mon May  3 14:13:06 2021
+# Process ID: 13800
+# Current directory: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _LOOKAHEAD/EBAZ4205/TEST_PROJ.runs/synth_1
+# Command line: vivado.exe -log parallel_adder_16x4.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source parallel_adder_16x4.tcl
+# Log file: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _LOOKAHEAD/EBAZ4205/TEST_PROJ.runs/synth_1/parallel_adder_16x4.vds
+# Journal file: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _LOOKAHEAD/EBAZ4205/TEST_PROJ.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source carry_lookahead_adder.tcl -notrace
+source parallel_adder_16x4.tcl -notrace

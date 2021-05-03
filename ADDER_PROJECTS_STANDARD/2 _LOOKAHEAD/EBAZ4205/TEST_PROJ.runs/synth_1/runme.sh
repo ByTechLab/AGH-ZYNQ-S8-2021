@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/TEST_PROJ.runs/synth_1'
+HD_PWD='C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _LOOKAHEAD/EBAZ4205/TEST_PROJ.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log carry_lookahead_adder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source carry_lookahead_adder.tcl
+EAStep vivado -log parallel_adder_16x4.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source parallel_adder_16x4.tcl

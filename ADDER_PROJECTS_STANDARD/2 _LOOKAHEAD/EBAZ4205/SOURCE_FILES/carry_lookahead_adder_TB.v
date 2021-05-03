@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 
  
-module carry_lookahead_adder_tb ();
+module carry_lookahead_adder_TB ();
  
   parameter WIDTH = 16;
  

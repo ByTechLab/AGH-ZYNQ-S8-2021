@@ -1,11 +1,10 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/SOURCE_FILES/carry_lookahead_adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _LOOKAHEAD/EBAZ4205/SOURCE_FILES/bit_shift_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit_shift_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _LOOKAHEAD/EBAZ4205/SOURCE_FILES/carry_lookahead_adder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module carry_lookahead_adder
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/SOURCE_FILES/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _LOOKAHEAD/EBAZ4205/SOURCE_FILES/full_adder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module full_adder
-WARNING: [VRFC 10-3609] overwriting previous definition of module 'full_adder' [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/SOURCE_FILES/full_adder.v:3]
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/SOURCE_FILES/carry_lookahead_adder_TB.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module full_adder
-INFO: [VRFC 10-311] analyzing module carry_lookahead_adder
-WARNING: [VRFC 10-3609] overwriting previous definition of module 'carry_lookahead_adder' [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/SOURCE_FILES/carry_lookahead_adder.v:8]
-INFO: [VRFC 10-311] analyzing module carry_lookahead_adder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _LOOKAHEAD/EBAZ4205/SOURCE_FILES/number_of_ones.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module number_of_ones
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module parallel_adder_16x4

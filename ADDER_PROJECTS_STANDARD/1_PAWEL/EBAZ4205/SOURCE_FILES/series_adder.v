@@ -23,6 +23,11 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
+// Sumowanie M liczb N bitowych.  
+// Projekt polega na realizacji procesora który na wejœciu otrzymuje równoczeœnie M bitów (np. 32 bity). 
+// S¹ to pojedyncze bity M liczb, któych kolejne bity b(0), b(1), b(2), b(3), ..., b(N-1) s¹ podawane na wejœcie procesora w kolejnych przes³aniach z CPU. 
+// Zadaniem bloku dedykwanego jest sumowanie liczb w kolejnych krokach i udostêpnienie CPU do odczytu wyniku sumy.   
+
 
 module series_adder(
     
@@ -47,6 +52,7 @@ reg [$clog2(M)+N-1:0] result_temp;
 //register inputs
 reg [M-1:0] data_reg;
 reg data_vld_reg;
+
 always @(posedge clk) begin
     data_reg <= data;
     data_vld_reg <= data_vld;

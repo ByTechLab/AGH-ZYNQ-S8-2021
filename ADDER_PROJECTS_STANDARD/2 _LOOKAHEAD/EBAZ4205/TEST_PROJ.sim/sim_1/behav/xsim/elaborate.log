@@ -1,14 +1,18 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: H:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 745340536f2541aa9a392f8ad33a7ca9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot carry_lookahead_adder_tb_behav xil_defaultlib.carry_lookahead_adder_tb xil_defaultlib.glbl -log elaborate.log 
+Running: H:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 745340536f2541aa9a392f8ad33a7ca9 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot parallel_adder_16x4_TB_behav xil_defaultlib.parallel_adder_16x4_TB xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'o_result' [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v:77]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.number_of_ones
+Compiling module xil_defaultlib.bit_shift_module
 Compiling module xil_defaultlib.full_adder
-Compiling module xil_defaultlib.carry_lookahead_adder(WIDTH=16)
-Compiling module xil_defaultlib.carry_lookahead_adder_tb
+Compiling module xil_defaultlib.carry_lookahead_adder_default
+Compiling module xil_defaultlib.parallel_adder_16x4
+Compiling module xil_defaultlib.parallel_adder_16x4_TB
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot carry_lookahead_adder_tb_behav
+Built simulation snapshot parallel_adder_16x4_TB_behav
