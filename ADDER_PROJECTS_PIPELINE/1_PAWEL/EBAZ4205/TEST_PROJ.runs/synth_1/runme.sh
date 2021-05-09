@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.runs/synth_1'
+HD_PWD='C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205/TEST_PROJ.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log series_adder.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source series_adder.tcl
+EAStep vivado -log series_adder_axi_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source series_adder_axi_wrapper.tcl

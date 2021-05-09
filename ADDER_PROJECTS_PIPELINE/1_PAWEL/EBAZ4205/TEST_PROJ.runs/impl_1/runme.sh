@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.runs/impl_1'
+HD_PWD='C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205/TEST_PROJ.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .init_design.begin.rst
-EAStep vivado -log series_adder.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source series_adder.tcl -notrace
+EAStep vivado -log series_adder_axi_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source series_adder_axi_wrapper.tcl -notrace
 
 

@@ -2,11 +2,11 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sat May  8 21:48:07 2021
-# Process ID: 3552
-# Current directory: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.runs/synth_1
-# Command line: vivado.exe -log series_adder.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source series_adder.tcl
-# Log file: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.runs/synth_1/series_adder.vds
-# Journal file: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.runs/synth_1\vivado.jou
+# Start of session at: Sun May  9 23:05:19 2021
+# Process ID: 14144
+# Current directory: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205/TEST_PROJ.runs/synth_1
+# Command line: vivado.exe -log series_adder_axi_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source series_adder_axi_wrapper.tcl
+# Log file: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205/TEST_PROJ.runs/synth_1/series_adder_axi_wrapper.vds
+# Journal file: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205/TEST_PROJ.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source series_adder.tcl -notrace
+source series_adder_axi_wrapper.tcl -notrace

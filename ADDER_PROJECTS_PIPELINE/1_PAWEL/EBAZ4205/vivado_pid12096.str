@@ -1,0 +1,124 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 12096
+License: Customer
+
+Current time: 	Sun May 09 21:13:29 CEST 2021
+Time zone: 	Central European Standard Time (Europe/Belgrade)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 4
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 148 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Admin
+User home directory: C:/Users/Admin
+User working directory: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205
+User country: 	PL
+User language: 	pl
+User locale: 	pl_PL
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/Admin/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/Admin/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/Admin/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205/vivado.log
+Vivado journal file location: 	C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205/vivado.jou
+Engine tmp dir: 	C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205/.Xil/Vivado-12096-DESKTOP-CJI5TPG
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 518 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1765 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Studia\SDUP\AGH-ZYNQ-S8-2021\ADDER_PROJECTS_PIPELINE\1_PAWEL\EBAZ4205\TEST_PROJ.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 528 MB. GUI used memory: 45 MB. Current time: 5/9/21, 9:13:31 PM CEST
+// Tcl Message: open_project C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205/TEST_PROJ.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 99 MB (+101410kb) [00:00:45]
+// [Engine Memory]: 622 MB (+500652kb) [00:00:45]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1027 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  11782 ms.
+// Tcl Message: open_project C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205/TEST_PROJ.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories 
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 653 MB. GUI used memory: 51 MB. Current time: 5/9/21, 9:13:51 PM CEST
+// WARNING: HEventQueue.dispatchEvent() is taking  3915 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1262 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 676.234 ; gain = 121.063 
+// Project name: TEST_PROJ; location: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205; part: xc7z010clg400-1
+// [Engine Memory]: 679 MB (+26792kb) [00:01:01]
+dismissDialog("Open Project"); // bx (cp)
+// a (cp): Critical Messages: addNotify
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 5496 ms. Increasing delay to 4000 ms.
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 104 MB (+381kb) [00:08:49]
+// HMemoryUtils.trashcanNow. Engine heap size: 691 MB. GUI used memory: 51 MB. Current time: 5/9/21, 9:43:56 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 691 MB. GUI used memory: 47 MB. Current time: 5/9/21, 10:13:56 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 691 MB. GUI used memory: 47 MB. Current time: 5/9/21, 10:43:56 PM CEST
+// TclEventType: RUN_COMPLETED
+// ah (cp): Synthesis Completed: addNotify
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// HMemoryUtils.trashcanNow. Engine heap size: 691 MB. GUI used memory: 48 MB. Current time: 5/9/21, 11:13:57 PM CEST

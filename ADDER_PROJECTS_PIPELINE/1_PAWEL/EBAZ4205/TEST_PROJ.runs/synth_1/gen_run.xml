@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1620503282">
-  <File Type="PA-TCL" Name="series_adder.tcl"/>
-  <File Type="REPORTS-TCL" Name="series_adder_reports.tcl"/>
-  <File Type="RDS-RDS" Name="series_adder.vds"/>
-  <File Type="RDS-UTIL" Name="series_adder_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="series_adder_utilization_synth.pb"/>
-  <File Type="RDS-DCP" Name="series_adder.dcp"/>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1620594316">
+  <File Type="PA-TCL" Name="series_adder_axi_wrapper.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="series_adder_axi_wrapper_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="series_adder_axi_wrapper_reports.tcl"/>
+  <File Type="RDS-RDS" Name="series_adder_axi_wrapper.vds"/>
+  <File Type="RDS-UTIL" Name="series_adder_axi_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="series_adder_axi_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="series_adder_axi_wrapper.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="series_adder_axi_wrapper_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="series_adder_axi_wrapper_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PPRDIR/SOURCE_FILES/series_adder.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/series_adder_axi_wrapper.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -33,7 +43,7 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="series_adder"/>
+      <Option Name="TopModule" Val="series_adder_axi_wrapper"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
