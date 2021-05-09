@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed May  5 22:18:09 2021">
+<application name="pa" timeStamp="Sun May  9 13:41:22 2021">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="deaea78186af4b2d81933942e1be23b1" type="ProjectID"/>
 <property name="ProjectIteration" value="5" type="ProjectIteration"/>
@@ -123,6 +123,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="TimingItemFlatTablePanel_TABLE" value="24" type="GuiHandlerData"/>
 <property name="TouchpointSurveyDialog_NO" value="1" type="GuiHandlerData"/>
 <property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="13" type="GuiHandlerData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="14" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="9" type="TclMode"/>
 </item>
 </section>
 </application>

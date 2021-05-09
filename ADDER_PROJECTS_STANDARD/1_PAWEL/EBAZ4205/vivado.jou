@@ -2,25 +2,13 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed May  5 21:41:00 2021
-# Process ID: 13348
+# Start of session at: Sun May  9 13:37:06 2021
+# Process ID: 15308
 # Current directory: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3696 C:\Studia\SDUP\AGH-ZYNQ-S8-2021\ADDER_PROJECTS_STANDARD\1_PAWEL\EBAZ4205\TEST_PROJ.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2740 C:\Studia\SDUP\AGH-ZYNQ-S8-2021\ADDER_PROJECTS_STANDARD\1_PAWEL\EBAZ4205\TEST_PROJ.xpr
 # Log file: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/vivado.log
 # Journal file: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205\vivado.jou
 #-----------------------------------------------------------
 start_gui
 open_project C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.xpr
 update_compile_order -fileset sources_1
-add_files -fileset constrs_1 -norecurse C:/Studia/SDUP/projekt_test/projekt_test.srcs/constrs_1/new/constrains.xdc
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
-reset_run synth_1
-launch_runs synth_1 -jobs 2
-wait_on_run synth_1
-launch_runs impl_1 -jobs 2
-wait_on_run impl_1
-open_run impl_1
-report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1

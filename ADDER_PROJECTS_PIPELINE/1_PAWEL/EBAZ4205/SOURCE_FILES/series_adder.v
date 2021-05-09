@@ -11,9 +11,7 @@
 // Tool Versions: 
 // Description: 
 // M - number of values to sum
-// N - length of each summed value
-// Output vector length - N + log2(M)
-// 
+//  
 // Dependencies: 
 // 
 // Revision:

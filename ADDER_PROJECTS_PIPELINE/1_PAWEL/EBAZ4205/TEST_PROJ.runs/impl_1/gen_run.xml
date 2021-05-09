@@ -39,6 +39,7 @@
   <File Type="ROUTE-TIMING-PB" Name="series_adder_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="series_adder_timing_summary_routed.rpx"/>
   <File Type="ROUTE-CLK" Name="series_adder_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="series_adder.vdi"/>
   <File Type="ROUTE-BUS-SKEW" Name="series_adder_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="series_adder_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="series_adder_bus_skew_routed.rpx"/>
@@ -48,7 +49,6 @@
   <File Type="BITSTR-RBT" Name="series_adder.rbt"/>
   <File Type="BITSTR-NKY" Name="series_adder.nky"/>
   <File Type="BG-DRC" Name="series_adder.drc"/>
-  <File Type="RDI-RDI" Name="series_adder.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

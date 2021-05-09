@@ -2,52 +2,16 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Sun May  9 09:40:00 2021
-# Process ID: 14476
-# Current directory: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15304 C:\Studia\SDUP\AGH-ZYNQ-S8-2021\ADDER_PROJECTS_STANDARD\1_PAWEL\EBAZ4205\TEST_PROJ.xpr
-# Log file: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/vivado.log
-# Journal file: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205\vivado.jou
+# Start of session at: Sun May  9 17:34:00 2021
+# Process ID: 9612
+# Current directory: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10680 C:\Studia\SDUP\AGH-ZYNQ-S8-2021\ADDER_PROJECTS_PIPELINE\1_PAWEL\EBAZ4205\TEST_PROJ.xpr
+# Log file: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205/vivado.log
+# Journal file: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.xpr
+open_project C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_PIPELINE/1_PAWEL/EBAZ4205/TEST_PROJ.xpr
 update_compile_order -fileset sources_1
-update_compile_order -fileset sim_1
-launch_simulation
-source series_adder_TB.tcl
-current_wave_config {Untitled 1}
-add_wave {{/series_adder_TB/u_series_adder_data_streamer}} 
-relaunch_sim
-current_wave_config {Untitled 1}
-add_wave {{/series_adder_TB/u_series_adder_data_streamer/dut_series_adder}} 
-relaunch_sim
-relaunch_sim
-close_sim
-launch_simulation
-source series_adder_TB.tcl
-current_wave_config {Untitled 2}
-add_wave {{/series_adder_TB/u_series_adder_data_streamer}} 
-relaunch_sim
-relaunch_sim
-relaunch_sim
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-current_wave_config {Untitled 3}
-add_wave {{/series_adder_TB/u_series_adder_data_streamer}} 
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-relaunch_sim
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.srcs/sim_1/new/series_adder_file_TB.v w ]
-add_files -fileset sim_1 C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.srcs/sim_1/new/series_adder_file_TB.v
-update_compile_order -fileset sim_1
-set_property file_type SystemVerilog [get_files  C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.srcs/sim_1/new/series_adder_file_TB.v]
 # Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
 set_property source_mgmt_mode None [current_project]
 set_property top series_adder_file_TB [get_filesets sim_1]
@@ -55,6 +19,7 @@ set_property top_lib xil_defaultlib [get_filesets sim_1]
 # Re-enabling previously disabled source management mode.
 set_property source_mgmt_mode All [current_project]
 update_compile_order -fileset sim_1
+launch_simulation
 launch_simulation
 source series_adder_file_TB.tcl
 relaunch_sim
@@ -66,20 +31,5 @@ relaunch_sim
 relaunch_sim
 relaunch_sim
 relaunch_sim
-run all
 relaunch_sim
-run all
-update_compile_order -fileset sim_1
-relaunch_sim
-update_compile_order -fileset sim_1
-relaunch_sim
-run all
-run all
-relaunch_sim
-run all
-set_property -name {xsim.simulate.runtime} -value {1000000ns} -objects [get_filesets sim_1]
-relaunch_sim
-relaunch_sim
-run all
-close_sim
 close_sim
