@@ -39,7 +39,7 @@ module series_adder(
     output reg [$clog2(M)+N-1:0] result
     
 );  
-parameter M = 8;
+parameter M = 32;
 parameter N = 8;
 
 

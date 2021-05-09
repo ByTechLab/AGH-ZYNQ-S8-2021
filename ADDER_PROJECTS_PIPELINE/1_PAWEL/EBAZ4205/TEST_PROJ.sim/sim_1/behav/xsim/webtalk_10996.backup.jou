@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May  8 22:23:51 2021
+# Process ID: 10996
+# Current directory: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.sim/sim_1/behav/xsim/xsim.dir/series_adder_TB_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.sim/sim_1/behav/xsim/xsim.dir/series_adder_TB_behav/webtalk/xsim_webtalk.tcl -notrace

@@ -1,0 +1,8 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Comparison correct
+Comparison correct
+Comparison correct
+Comparison correct
+Simulation finished
+$finish called at time : 1490 ns : File "C:/Studia/SDUP/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/TEST_PROJ.srcs/sim_1/new/series_adder_file_TB.v" Line 63
