@@ -1,1 +1,0 @@
--wto "745340536f2541aa9a392f8ad33a7ca9" --incr --debug "typical" --relax --mt "2" --maxdelay -L "xil_defaultlib" -L "xilinx_vip" -L "simprims_ver" -L "secureip" --snapshot "carry_lookahead_adder_tb_time_synth" -transport_int_delays -pulse_r "0" -pulse_int_r "0" -pulse_e "0" -pulse_int_e "0" "xil_defaultlib.carry_lookahead_adder_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

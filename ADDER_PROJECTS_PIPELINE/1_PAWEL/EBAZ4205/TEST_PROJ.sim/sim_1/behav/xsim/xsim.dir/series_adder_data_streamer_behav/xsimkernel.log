@@ -1,4 +1,0 @@
-Running: xsim.dir/series_adder_data_streamer_behav/xsimk.exe -simmode gui -wdb series_adder_data_streamer_behav.wdb -simrunnum 0 -socket 61278
-Design successfully loaded
-Design Loading Memory Usage: 6236 KB (Peak: 6236 KB)
-Design Loading CPU Usage: 31 ms

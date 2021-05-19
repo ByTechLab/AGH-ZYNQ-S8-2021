@@ -1,5 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/SOURCE_FILES/series_adder.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module series_adder
-WARNING: [VRFC 10-2096] empty statement in sequential block [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/SOURCE_FILES/series_adder.v:92]
-WARNING: [VRFC 10-3380] identifier 'M' is used before its declaration [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/SOURCE_FILES/series_adder.v:37]
-WARNING: [VRFC 10-3380] identifier 'M' is used before its declaration [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/1_PAWEL/EBAZ4205/SOURCE_FILES/series_adder.v:39]

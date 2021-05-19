@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="parallel_adder_16x4_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="parallel_adder_16x4_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="146600001fs"></ZoomEndTime>
+      <Cursor1Time time="15000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="92"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject fp_name="/parallel_adder_16x4_TB/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/parallel_adder_16x4_TB/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/parallel_adder_16x4_TB/data" type="array">
+      <obj_property name="ElementShortName">data[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/parallel_adder_16x4_TB/result" type="array">
+      <obj_property name="ElementShortName">result[7:0]</obj_property>
+      <obj_property name="ObjectShortName">result[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/parallel_adder_16x4_TB/DUT/data_bits_input_reg" type="array">
+      <obj_property name="ElementShortName">data_bits_input_reg[15:0]</obj_property>
+      <obj_property name="ObjectShortName">data_bits_input_reg[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/parallel_adder_16x4_TB/DUT/counter_reg_delayed" type="array">
+      <obj_property name="ElementShortName">counter_reg_delayed[1:0]</obj_property>
+      <obj_property name="ObjectShortName">counter_reg_delayed[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/parallel_adder_16x4_TB/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/parallel_adder_16x4_TB/DUT/ones" type="array">
+      <obj_property name="ElementShortName">ones[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ones[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/parallel_adder_16x4_TB/DUT/shifted_data" type="array">
+      <obj_property name="ElementShortName">shifted_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">shifted_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/parallel_adder_16x4_TB/DUT/new_result" type="array">
+      <obj_property name="ElementShortName">new_result[7:0]</obj_property>
+      <obj_property name="ObjectShortName">new_result[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

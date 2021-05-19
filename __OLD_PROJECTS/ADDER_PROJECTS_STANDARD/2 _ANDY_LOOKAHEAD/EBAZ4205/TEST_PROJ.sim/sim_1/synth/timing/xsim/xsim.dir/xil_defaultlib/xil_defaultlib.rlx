@@ -1,0 +1,8 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/SOURCE_FILES/carry_lookahead_adder.v,1619989831,verilog,,,C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/SOURCE_FILES/full_adder.v,carry_lookahead_adder,,,,,,,,
+C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/SOURCE_FILES/carry_lookahead_adder_TB.v,1619989682,verilog,,,C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/SOURCE_FILES/carry_lookahead_adder.v,carry_lookahead_adder_tb,,axi_vip_v1_1_4;processing_system7_vip_v1_0_6;xilinx_vip,../../../../../TEST_PROJ.srcs/sources_1/bd/TEST_BD/ipshared/70cf/hdl;../../../../../TEST_PROJ.srcs/sources_1/bd/TEST_BD/ipshared/ec67/hdl;H:/Xilinx/Vivado/2018.3/data/xilinx_vip/include,,,,,
+C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/SOURCE_FILES/full_adder.v,1619989088,verilog,,,,full_adder,,,,,,,,
+C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/TEST_PROJ.sim/sim_1/synth/timing/xsim/carry_lookahead_adder_tb_time_synth.v,1619990081,verilog,,C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 - ANDY/EBAZ4205/SOURCE_FILES/carry_lookahead_adder_TB.v,,glbl,,axi_vip_v1_1_4;processing_system7_vip_v1_0_6;xilinx_vip,../../../../../TEST_PROJ.srcs/sources_1/bd/TEST_BD/ipshared/70cf/hdl;../../../../../TEST_PROJ.srcs/sources_1/bd/TEST_BD/ipshared/ec67/hdl;H:/Xilinx/Vivado/2018.3/data/xilinx_vip/include,,,,,

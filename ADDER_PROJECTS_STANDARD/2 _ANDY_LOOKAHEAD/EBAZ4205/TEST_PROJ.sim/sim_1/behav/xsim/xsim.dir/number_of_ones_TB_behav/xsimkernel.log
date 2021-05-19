@@ -1,7 +1,0 @@
-Running: xsim.dir/number_of_ones_TB_behav/xsimk.exe -simmode gui -wdb number_of_ones_TB_behav.wdb -simrunnum 0 -socket 58446
-Design successfully loaded
-Design Loading Memory Usage: 6204 KB (Peak: 6204 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 6788 KB (Peak: 6788 KB)
-Simulation CPU Usage: 15 ms

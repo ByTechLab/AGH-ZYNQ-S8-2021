@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../TEST_PROJ.srcs/sources_1/bd/TEST_BD/ipshared/ec67/hdl" --include "../../../../../TEST_PROJ.srcs/sources_1/bd/TEST_BD/ipshared/70cf/hdl" --include "H:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"series_adder_TB_time_synth.v" \
+
+sv xil_defaultlib  --include "../../../../../TEST_PROJ.srcs/sources_1/bd/TEST_BD/ipshared/ec67/hdl" --include "../../../../../TEST_PROJ.srcs/sources_1/bd/TEST_BD/ipshared/70cf/hdl" --include "H:/Xilinx/Vivado/2018.3/data/xilinx_vip/include" \
+"../../../../../SOURCE_FILES/series_adder_TB.sv" \
+
+# Do not sort compile order
+nosort

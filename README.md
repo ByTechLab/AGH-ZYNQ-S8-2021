@@ -1,1 +1,2 @@
-# AGH-ZYNQ-S8-2021
+# ZynqSDUP
+

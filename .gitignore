@@ -1,0 +1,4 @@
+*.log
+vivado/*
+!vivado/Zynq.xpr
+Packages

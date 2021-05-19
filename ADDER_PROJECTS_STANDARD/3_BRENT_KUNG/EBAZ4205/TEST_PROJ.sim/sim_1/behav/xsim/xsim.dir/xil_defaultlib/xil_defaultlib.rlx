@@ -1,7 +1,0 @@
-0.6
-2018.3
-Dec  7 2018
-00:33:28
-C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/3_BRENT_KUNG/EBAZ4205/SOURCE_FILES/brent_kung_adder.v,1619993504,verilog,,C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/3_BRENT_KUNG/EBAZ4205/SOURCE_FILES/brent_kung_adder_TB.v,,Brent_Kung_Adder;FA_CLA_prefix;cin_generation_logic;group_q_generation;parallel_prefix_tree_first_half;parallel_prefix_tree_second_half;prefix_logic,,axi_vip_v1_1_4;processing_system7_vip_v1_0_6;xilinx_vip,../../../../TEST_PROJ.srcs/sources_1/bd/TEST_BD/ipshared/70cf/hdl;../../../../TEST_PROJ.srcs/sources_1/bd/TEST_BD/ipshared/ec67/hdl;H:/Xilinx/Vivado/2018.3/data/xilinx_vip/include,,,,,
-C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/3_BRENT_KUNG/EBAZ4205/SOURCE_FILES/brent_kung_adder_TB.v,1619993206,verilog,,,,carry_lookahead_adder_tb,,axi_vip_v1_1_4;processing_system7_vip_v1_0_6;xilinx_vip,../../../../TEST_PROJ.srcs/sources_1/bd/TEST_BD/ipshared/70cf/hdl;../../../../TEST_PROJ.srcs/sources_1/bd/TEST_BD/ipshared/ec67/hdl;H:/Xilinx/Vivado/2018.3/data/xilinx_vip/include,,,,,
-C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/3_BRENT_KUNG/EBAZ4205/TEST_PROJ.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,axi_vip_v1_1_4;processing_system7_vip_v1_0_6;xilinx_vip,,,,,,
