@@ -145,7 +145,7 @@ always
     #5 clk <= ~clk; 
  
  
-series_adder_data_streamer #(M) u_series_adder_data_streamer
+series_adder_axi_streamer #(M) u_series_adder_axi_streamer
 (
     .clk(clk),
     .rst_p(rst_p),

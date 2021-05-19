@@ -121,8 +121,11 @@ always @(posedge clk) begin
     send_carry_byte <= last_byte;
     
     if((bit_ctr == 0) & (byte_ctr == 0)) begin
-        partial_sum_reg <= input_sum >> 1;
+        if(data_vld_reg == 1'b1) begin
+            partial_sum_reg <= input_sum >> 1;
+        end
         result_byte_r[bit_ctr] <= input_sum[0];
+        //result_byte_r <= input_sum[0];
     end
     else begin
         partial_sum_reg <= (partial_sum_reg + input_sum) >> 1;

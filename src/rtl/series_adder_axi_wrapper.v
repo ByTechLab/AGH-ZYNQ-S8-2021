@@ -57,8 +57,9 @@ always @(posedge clk) begin
         end
         else begin
             data_r_vld <= 1'b1;
-            if((bit_ctr == 0) | (byte_ctr == num_bytes_r)) begin
+            if((bit_ctr == 7) & (byte_ctr == num_bytes_r-1)) begin
                 byte_ctr <= 0;
+                bit_ctr <= 0;
                 module_idle <= 1'b1;
             end
             else if(bit_ctr == 7) begin
@@ -76,11 +77,13 @@ always @(posedge clk) begin
     if(rst_p == 1'b1) begin
         module_idle <= 1'b1;
         data_r_vld <= 1'b0;
+        byte_ctr <= 0;
+        bit_ctr <= 0;
     end
     
 end
 
-reg [3-1:0] byte_out_ctr;
+reg [2-1:0] byte_out_ctr;
 wire result_byte_vld;
 wire result_byte_lsb;
 wire result_byte_msb;
