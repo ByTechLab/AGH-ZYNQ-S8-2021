@@ -2,10 +2,10 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Thu May 13 08:37:07 2021
-# Process ID: 12832
+# Start of session at: Thu May 13 08:30:56 2021
+# Process ID: 16632
 # Current directory: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4024 C:\Users\lacze\Desktop\AGH-FPGA-S8\AGH-ZYNQ-S8-2021\ADDER_PROJECTS_STANDARD\2 _ANDY_LOOKAHEAD\EBAZ4205\TEST_PROJ.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13344 C:\Users\lacze\Desktop\AGH-FPGA-S8\AGH-ZYNQ-S8-2021\ADDER_PROJECTS_STANDARD\2 _ANDY_LOOKAHEAD\EBAZ4205\TEST_PROJ.xpr
 # Log file: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/vivado.log
 # Journal file: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205\vivado.jou
 #-----------------------------------------------------------
@@ -13,11 +13,13 @@ start_gui
 open_project {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.xpr}
 INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
 Current project path is 'C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205'
+INFO: [Project 1-313] Project file moved from 'C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _LOOKAHEAD/EBAZ4205' since last save.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lacze/Desktop/AGH-FPGA-S8/ip_repo/cordic_ip_1.0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'H:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 790.047 ; gain = 124.641
 update_compile_order -fileset sources_1
 launch_simulation
 INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
@@ -32,6 +34,20 @@ INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
 INFO: [USF-XSim-2] XSim::Compile design
 INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.sim/sim_1/behav/xsim'
 "xvlog --incr --relax -L axi_vip_v1_1_4 -L processing_system7_vip_v1_0_6 -L xilinx_vip -prj parallel_adder_16x4_TB_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/bit_shift_module.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bit_shift_module
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/carry_lookahead_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module carry_lookahead_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/full_adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module full_adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/number_of_ones.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module number_of_ones
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module parallel_adder_16x4
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4_TB.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module parallel_adder_16x4_TB
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
 INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
 INFO: [USF-XSim-3] XSim::Elaborate design
 INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.sim/sim_1/behav/xsim'
@@ -42,34 +58,31 @@ Using 2 slave threads.
 Starting static elaboration
 WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'o_result' [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v:77]
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
-INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.number_of_ones
+Compiling module xil_defaultlib.bit_shift_module
+Compiling module xil_defaultlib.full_adder
+Compiling module xil_defaultlib.carry_lookahead_adder_default
+Compiling module xil_defaultlib.parallel_adder_16x4
+Compiling module xil_defaultlib.parallel_adder_16x4_TB
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot parallel_adder_16x4_TB_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 -notrace
+couldn't read file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Thu May 13 08:36:40 2021...
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
 INFO: [USF-XSim-4] XSim::Simulate design
 INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.sim/sim_1/behav/xsim'
 INFO: [USF-XSim-98] *** Running xsim
    with args "parallel_adder_16x4_TB_behav -key {Behavioral:sim_1:Functional:parallel_adder_16x4_TB} -tclbatch {parallel_adder_16x4_TB.tcl} -protoinst "protoinst_files/TEST_BD.protoinst" -view {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/parallel_adder_16x4_TB_behav.wcfg}} -log {simulate.log}"
 INFO: [USF-XSim-8] Loading simulator feature
 Vivado Simulator 2018.3
-INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/TEST_BD.protoinst
-WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/TEST_BD.protoinst for the following reason(s):
-There are no instances of module "TEST_BD" in the design.
-
-Time resolution is 1 ps
-open_wave_config {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/parallel_adder_16x4_TB_behav.wcfg}
-source parallel_adder_16x4_TB.tcl
-# set curr_wave [current_wave_config]
-# if { [string length $curr_wave] == 0 } {
-#   if { [llength [get_objects]] > 0} {
-#     add_wave /
-#     set_property needs_save false [current_wave_config]
-#   } else {
-#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
-#   }
-# }
-# run 1000ns
-INFO: [USF-XSim-96] XSim completed. Design snapshot 'parallel_adder_16x4_TB_behav' loaded.
-INFO: [USF-XSim-97] XSim simulation ran for 1000ns
-close_sim
-INFO: [Simtcl 6-16] Simulation closed
-exit
-INFO: [Common 17-206] Exiting Vivado at Thu May 13 08:57:12 2021...
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.

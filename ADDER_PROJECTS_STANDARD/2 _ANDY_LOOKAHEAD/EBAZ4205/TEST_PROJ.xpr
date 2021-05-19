@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="39" Path="C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _LOOKAHEAD/EBAZ4205/TEST_PROJ.xpr">
+<Project Version="7" Minor="39" Path="C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="745340536f2541aa9a392f8ad33a7ca9"/>
@@ -32,7 +32,7 @@
     <Option Name="EnableBDX" Val="FALSE"/>
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="42"/>
+    <Option Name="WTXSimLaunchSim" Val="44"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
