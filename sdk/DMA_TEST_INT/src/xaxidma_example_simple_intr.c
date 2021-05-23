@@ -84,6 +84,8 @@
 #include "xil_exception.h"
 #include "xdebug.h"
 
+#include <inttypes.h>
+
 #ifdef XPAR_UARTNS550_0_BASEADDR
 #include "xuartns550_l.h"       /* to use uartns550 */
 #endif
@@ -182,7 +184,7 @@ extern void xil_printf(const char *format, ...);
 static void Uart550_Setup(void);
 #endif
 
-static int CheckData(int Length, u32 StartValue);
+static int CheckData(int Length);
 static void TxIntrHandler(void *Callback);
 static void RxIntrHandler(void *Callback);
 
@@ -246,16 +248,17 @@ int main(void)
 	int Index;
 	u32 *TxBufferPtr;
 	u32 *RxBufferPtr;
-	u32 Value;
+
+	u32 NToSum [32];
 
 	TxBufferPtr = (u32 *)TX_BUFFER_BASE ;
 	RxBufferPtr = (u32 *)RX_BUFFER_BASE;
 	/* Initial setup for Uart16550 */
-#ifdef XPAR_UARTNS550_0_BASEADDR
+	#ifdef XPAR_UARTNS550_0_BASEADDR
 
-	Uart550_Setup();
+		Uart550_Setup();
 
-#endif
+	#endif
 
 	xil_printf("\r\n--- Entering main() --- \r\n");
 
@@ -308,17 +311,31 @@ int main(void)
 	RxDone = 0;
 	Error = 0;
 
-	// ----------------- INIT BUFFER WITH NUMBERS -------->>
+	// ----------------- INIT DATA BUFFER WITH NUMBERS -------->>
 
-	Value = TEST_START_VALUE;
-
-	for(Index = 0; Index < MAX_PKT_LEN; Index ++) {
-			TxBufferPtr[Index] = Value;
-
-			Value = (Value + 1);
+	for(Index = 0; Index < 33; Index ++)
+	{
+		TxBufferPtr[Index] = 0;
 	}
 
-	// ----------------- INIT BUFFER WITH NUMBERS --------<<
+	// Sum 32 x 100 (dec)
+	xil_printf("Preparing for summing 32 numbers filled with 100000 value (dec) \r\n");
+	for(Index = 0; Index < 32; Index ++)
+	{
+		NToSum[Index] = 100000;
+	}
+
+	TxBufferPtr[0] = 4;
+
+	for(u8 Index_2 = 1; Index_2 < 33; Index_2 ++)
+	{
+		for(Index = 0; Index < 32; Index ++)
+		{
+			TxBufferPtr[Index_2] |= (((NToSum[Index] & (0x00000001 << (Index_2-1))) >> (Index_2-1)) << Index);
+		}
+	}
+
+	// ----------------- INIT DATA BUFFER WITH NUMBERS --------<<
 
 
 	/* Flush the SrcBuffer before the DMA transfer, in case the Data Cache
@@ -332,8 +349,10 @@ int main(void)
 	/* Send a packet */
 	for(Index = 0; Index < Tries; Index ++) {
 
+		xil_printf("Initializing adder DMA transfers \r\n");
+
 //		Status = XAxiDma_SimpleTransfer(&AxiDma,(UINTPTR) RxBufferPtr,MAX_PKT_LEN, XAXIDMA_DEVICE_TO_DMA);
-		Status = XAxiDma_SimpleTransfer(&AxiDma,(UINTPTR) RxBufferPtr,1*4, XAXIDMA_DEVICE_TO_DMA); // Receive one byte
+		Status = XAxiDma_SimpleTransfer(&AxiDma,(UINTPTR) RxBufferPtr,2*4, XAXIDMA_DEVICE_TO_DMA); // Receive one byte
 
 		if (Status != XST_SUCCESS) {
 			return XST_FAILURE;
@@ -348,43 +367,69 @@ int main(void)
 		/*
 		 * Wait TX done and RX done
 		 */
-		while (!TxDone && !RxDone && !Error) {
+		while (!TxDone && !RxDone && !Error)
+		{
 				/* NOP */
 		}
 
-		if (Error) {
-			xil_printf("Failed test transmit%s done, "
-			"receive%s done\r\n", TxDone? "":" not",
-							RxDone? "":" not");
-
-			goto Done;
-
-		}
+//		if (Error)
+//		{
+//			xil_printf("Failed test transmit%s done, receive%s done\r\n", TxDone ? "":" not",RxDone ? "":" not");
+//		}
 
 		/*
 		 * Test finished, check data
 		 */
-//		Status = CheckData(MAX_PKT_LEN, 0x0c);
-		Status = CheckData(33, TEST_START_VALUE);
-		if (Status != XST_SUCCESS) {
-			xil_printf("Data check failed\r\n");
-			goto Done;
-		}
+		Status = CheckData(2);
 	}
 
 
-	xil_printf("Successfully ran AXI DMA interrupt Example\r\n");
-
+	xil_printf("Successfully ran AXI DMA interrupt Adder Program\r\n");
 
 	/* Disable TX and RX Ring interrupts and return success */
 
 	DisableIntrSystem(&Intc, TX_INTR_ID, RX_INTR_ID);
 
-Done:
 	xil_printf("--- Exiting main() --- \r\n");
 
 	return XST_SUCCESS;
 }
+
+
+
+static int CheckData(int Length)
+{
+	u32 *RxPacket;
+	int Index = 0;
+
+	RxPacket = (u32 *) RX_BUFFER_BASE;
+
+	/* Invalidate the DestBuffer before receiving the data, in case the
+	 * Data Cache is enabled
+	 */
+	#ifndef __aarch64__
+		Xil_DCacheInvalidateRange((UINTPTR)RxPacket, Length);
+	#endif
+
+
+	for(Index = 0; Index < Length; Index++)
+	{
+		xil_printf("Packets Received from Adder: %u: %u\r\n",Index, RxPacket[Index]);
+	}
+
+
+	uint64_t result = ((uint64_t)RxPacket[1]<<32) | (RxPacket[0]);
+
+	xil_printf("Total Result =  %lu + 2^32 * %lu \r\n",(unsigned long)RxPacket[0],(unsigned long)RxPacket[1]);
+
+
+	return XST_SUCCESS;
+}
+
+
+
+
+
 
 #ifdef XPAR_UARTNS550_0_BASEADDR
 /*****************************************************************************/
@@ -410,58 +455,8 @@ static void Uart550_Setup(void)
 }
 #endif
 
-/*****************************************************************************/
-/*
-*
-* This function checks data buffer after the DMA transfer is finished.
-*
-* We use the static tx/rx buffers.
-*
-* @param	Length is the length to check
-* @param	StartValue is the starting value of the first byte
-*
-* @return
-*		- XST_SUCCESS if validation is successful
-*		- XST_FAILURE if validation is failure.
-*
-* @note		None.
-*
-******************************************************************************/
-static int CheckData(int Length, u32 StartValue)
-{
-	u32 *RxPacket;
-	int Index = 0;
-	u32 Value;
-
-	RxPacket = (u32 *) RX_BUFFER_BASE;
-	Value = StartValue;
-
-	/* Invalidate the DestBuffer before receiving the data, in case the
-	 * Data Cache is enabled
-	 */
-#ifndef __aarch64__
-	Xil_DCacheInvalidateRange((UINTPTR)RxPacket, Length);
-#endif
 
 
-
-
-//	for(Index = 0; Index < Length; Index++) {
-//		if (RxPacket[Index] != Value) {
-//			xil_printf("Data error %d: %x/%x\r\n",Index, RxPacket[Index], Value);
-//			return XST_FAILURE;
-//		}
-//		Value = (Value + 1) & 0xFF;
-//	}
-	for(Index = 0; Index < Length; Index++)
-	{
-		xil_printf("Received data: %d: %d\r\n",Index, RxPacket[Index]);
-	}
-
-
-
-	return XST_SUCCESS;
-}
 
 /*****************************************************************************/
 /*

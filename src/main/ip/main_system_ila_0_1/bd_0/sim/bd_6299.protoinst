@@ -9,9 +9,9 @@
 						"ACLK": { "actual": "aclk"},
 						"ARESETN": { "actual": "aresetn"},
 						"TDATA": { "actual": "slot_0_axis_tdata"},
-						"TKEEP": { "actual": "slot_0_axis_tkeep"},
 						"TLAST": { "actual": "slot_0_axis_tlast"},
 						"TREADY": { "actual": "slot_0_axis_tready"},
+						"TSTRB": { "actual": "slot_0_axis_tstrb"},
 						"TVALID": { "actual": "slot_0_axis_tvalid"}
 					}
 				},

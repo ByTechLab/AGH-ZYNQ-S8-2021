@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x6B629E096EAA8341",
+      "boundary_crc": "0xC4A77BDB99FCA384",
       "design_src": "SBD",
       "device": "xc7z010clg400-1",
       "name": "bd_6299",
@@ -28,7 +28,7 @@
             "value_src": "default"
           },
           "HAS_TKEEP": {
-            "value": "1",
+            "value": "0",
             "value_src": "default"
           },
           "HAS_TLAST": {
@@ -40,7 +40,7 @@
             "value_src": "default"
           },
           "HAS_TSTRB": {
-            "value": "0",
+            "value": "1",
             "value_src": "default"
           },
           "INSERT_VIP": {
@@ -314,13 +314,13 @@
             "value": "AXI4S"
           },
           "C_SLOT_0_HAS_TKEEP": {
-            "value": "1"
+            "value": "0"
           },
           "C_SLOT_0_HAS_TREADY": {
             "value": "1"
           },
           "C_SLOT_0_HAS_TSTRB": {
-            "value": "0"
+            "value": "1"
           },
           "C_SLOT_0_MON_MODE": {
             "value": "FT"
@@ -389,9 +389,9 @@
           "ila_lib/probe0"
         ]
       },
-      "net_slot_0_axis_tkeep": {
+      "net_slot_0_axis_tstrb": {
         "ports": [
-          "g_inst/m_slot_0_axis_tkeep",
+          "g_inst/m_slot_0_axis_tstrb",
           "ila_lib/probe1"
         ]
       },
