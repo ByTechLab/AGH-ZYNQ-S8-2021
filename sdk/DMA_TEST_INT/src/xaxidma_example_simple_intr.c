@@ -169,6 +169,38 @@
  * The receive side will only get one completion interrupt for this example.
  */
 
+//------------------------------------------------------------------------------
+#include "xparameters.h"
+#include "xgpio_l.h"
+#include "xil_printf.h"
+
+/************************** Constant Definitions *****************************/
+
+#define LED 0x01 /* Assumes bit 0 of GPIO is connected to an LED */
+
+/*
+ * The following constants map to the XPAR parameters created in the
+ * xparameters.h file. They are defined here such that a user can easily
+ * change all the needed parameters in one place.
+ */
+#define GPIO_REG_BASEADDR	XPAR_GPIO_0_BASEADDR
+
+/*
+ * The following constant is used to wait after an LED is turned on to make
+ * sure that it is visible to the human eye.  This constant might need to be
+ * tuned for faster or slower processor speeds.
+ */
+#define LED_DELAY	 1000000
+
+/*
+ * The following constant is used to determine which channel of the GPIO is
+ * used for the LED if there are 2 channels supported.
+ */
+#define LED_CHANNEL	1
+//------------------------------------------------------------------------------
+
+
+
 /**************************** Type Definitions *******************************/
 
 
@@ -242,6 +274,14 @@ volatile int Error;
 ******************************************************************************/
 int main(void)
 {
+
+	/*
+	 * Set the direction for all signals to be inputs except the LED output
+	*/
+	XGpio_WriteReg((GPIO_REG_BASEADDR),((LED_CHANNEL - 1) * XGPIO_CHAN_OFFSET) + XGPIO_TRI_OFFSET, (~LED));
+
+
+	//------------------
 	int Status;
 	XAxiDma_Config *Config;
 	int Tries = NUMBER_OF_TRANSFERS;
@@ -351,6 +391,9 @@ int main(void)
 
 		xil_printf("Initializing adder DMA transfers \r\n");
 
+		// Start Osciloscope time Measurement <<===============>>
+		XGpio_WriteReg((GPIO_REG_BASEADDR),((LED_CHANNEL - 1) * XGPIO_CHAN_OFFSET) + XGPIO_DATA_OFFSET, ~LED);
+
 //		Status = XAxiDma_SimpleTransfer(&AxiDma,(UINTPTR) RxBufferPtr,MAX_PKT_LEN, XAXIDMA_DEVICE_TO_DMA);
 		Status = XAxiDma_SimpleTransfer(&AxiDma,(UINTPTR) RxBufferPtr,2*4, XAXIDMA_DEVICE_TO_DMA); // Receive one byte
 
@@ -371,6 +414,9 @@ int main(void)
 		{
 				/* NOP */
 		}
+
+		// Start Osciloscope time Measurement <<===============>>
+		XGpio_WriteReg((GPIO_REG_BASEADDR),((LED_CHANNEL - 1) * XGPIO_CHAN_OFFSET) + XGPIO_DATA_OFFSET, LED);
 
 //		if (Error)
 //		{
