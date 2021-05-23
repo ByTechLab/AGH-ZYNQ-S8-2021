@@ -68,6 +68,9 @@ error_ctr = 0;
 #50 
 
 fd = $fopen("../../../../../src/sim/test_vector", "r");
+
+$display("Simulation started");
+
 if(fd != 0) begin
     while (!$feof(fd)) begin
         $fgets(line, fd);
@@ -98,8 +101,9 @@ if(fd != 0) begin
             $display("Comparison error");
             error_ctr = error_ctr + 1;
         end
+        #500
         line_ctr = line_ctr+1;
-        
+       
     end
     $display("Simulation finished");
     if(error_ctr == 0) begin

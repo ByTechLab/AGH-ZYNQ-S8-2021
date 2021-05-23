@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="series_adder_file_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="series_adder_file_TB" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="227000000fs"></ZoomStartTime>
+      <ZoomEndTime time="868000001fs"></ZoomEndTime>
+      <Cursor1Time time="430000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="88"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="25" />
+   <wvobject fp_name="/series_adder_file_TB/fd" type="array">
+      <obj_property name="ElementShortName">fd[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fd[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/data" type="array">
+      <obj_property name="ElementShortName">data[7:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">data[7:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/result_target" type="array">
+      <obj_property name="ElementShortName">result_target[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result_target[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/line_ctr" type="array">
+      <obj_property name="ElementShortName">line_ctr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">line_ctr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/error_ctr" type="array">
+      <obj_property name="ElementShortName">error_ctr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">error_ctr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/rst_p" type="logic">
+      <obj_property name="ElementShortName">rst_p</obj_property>
+      <obj_property name="ObjectShortName">rst_p</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/data_vld" type="logic">
+      <obj_property name="ElementShortName">data_vld</obj_property>
+      <obj_property name="ObjectShortName">data_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/result_vld" type="logic">
+      <obj_property name="ElementShortName">result_vld</obj_property>
+      <obj_property name="ObjectShortName">result_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/result" type="array">
+      <obj_property name="ElementShortName">result[39:0]</obj_property>
+      <obj_property name="ObjectShortName">result[39:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/data_packed" type="array">
+      <obj_property name="ElementShortName">data_packed[255:0]</obj_property>
+      <obj_property name="ObjectShortName">data_packed[255:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/data_ready" type="logic">
+      <obj_property name="ElementShortName">data_ready</obj_property>
+      <obj_property name="ObjectShortName">data_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/M" type="array">
+      <obj_property name="ElementShortName">M[31:0]</obj_property>
+      <obj_property name="ObjectShortName">M[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/u_series_adder_axi_streamer/dut_series_adder_axi_wrapper/data_rdy" type="logic">
+      <obj_property name="ElementShortName">data_rdy</obj_property>
+      <obj_property name="ObjectShortName">data_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/u_series_adder_axi_streamer/dut_series_adder_axi_wrapper/data_vld" type="logic">
+      <obj_property name="ElementShortName">data_vld</obj_property>
+      <obj_property name="ObjectShortName">data_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/u_series_adder_axi_streamer/dut_series_adder_axi_wrapper/data_i" type="array">
+      <obj_property name="ElementShortName">data_i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">data_i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/u_series_adder_axi_streamer/dut_series_adder_axi_wrapper/result_o" type="array">
+      <obj_property name="ElementShortName">result_o[31:0]</obj_property>
+      <obj_property name="ObjectShortName">result_o[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/u_series_adder_axi_streamer/dut_series_adder_axi_wrapper/result_vld" type="logic">
+      <obj_property name="ElementShortName">result_vld</obj_property>
+      <obj_property name="ObjectShortName">result_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/u_series_adder_axi_streamer/dut_series_adder_axi_wrapper/result_rdy" type="logic">
+      <obj_property name="ElementShortName">result_rdy</obj_property>
+      <obj_property name="ObjectShortName">result_rdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/u_series_adder_axi_streamer/dut_series_adder_axi_wrapper/result_byte" type="array">
+      <obj_property name="ElementShortName">result_byte[7:0]</obj_property>
+      <obj_property name="ObjectShortName">result_byte[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/u_series_adder_axi_streamer/dut_series_adder_axi_wrapper/result_byte_vld" type="logic">
+      <obj_property name="ElementShortName">result_byte_vld</obj_property>
+      <obj_property name="ObjectShortName">result_byte_vld</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/u_series_adder_axi_streamer/dut_series_adder_axi_wrapper/result_byte_lsb" type="logic">
+      <obj_property name="ElementShortName">result_byte_lsb</obj_property>
+      <obj_property name="ObjectShortName">result_byte_lsb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/u_series_adder_axi_streamer/dut_series_adder_axi_wrapper/result_byte_msb" type="logic">
+      <obj_property name="ElementShortName">result_byte_msb</obj_property>
+      <obj_property name="ObjectShortName">result_byte_msb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/series_adder_file_TB/u_series_adder_axi_streamer/dut_series_adder_axi_wrapper/byte_out_ctr" type="array">
+      <obj_property name="ElementShortName">byte_out_ctr[1:0]</obj_property>
+      <obj_property name="ObjectShortName">byte_out_ctr[1:0]</obj_property>
+   </wvobject>
+</wave_config>
