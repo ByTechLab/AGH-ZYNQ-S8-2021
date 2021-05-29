@@ -1,35 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1620043984">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1622298513">
   <File Type="PA-TCL" Name="parallel_adder_16x4.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="parallel_adder_16x4_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="parallel_adder_16x4_reports.tcl"/>
   <File Type="RDS-RDS" Name="parallel_adder_16x4.vds"/>
   <File Type="RDS-UTIL" Name="parallel_adder_16x4_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="parallel_adder_16x4_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="parallel_adder_16x4.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="parallel_adder_16x4_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="parallel_adder_16x4_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/SOURCE_FILES/bit_shift_module.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/SOURCE_FILES/carry_lookahead_adder.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/SOURCE_FILES/full_adder.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
-    <File Path="$PPRDIR/SOURCE_FILES/number_of_ones.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
@@ -66,6 +48,12 @@
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/constr_main.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="ConstrsType" Val="XDC"/>
     </Config>
@@ -80,5 +68,8 @@
     <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="full_adder"/>
   <BlockFileSet Type="BlockSrcs" Name="TEST_BD_processing_system7_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="number_of_ones"/>
+  <BlockFileSet Type="BlockSrcs" Name="bit_shift_module"/>
 </GenRun>

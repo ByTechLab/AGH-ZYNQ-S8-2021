@@ -1,29 +1,34 @@
 `timescale 1ns / 1ps
 
-module parallel_adder_16x4(
-    input wire [15:0] data_bits,
+module parallel_adder_16x4
+    #(
+     parameter M = 32, // ilosc liczb do sumowania
+     parameter N = 32 // d³ugosc liczb do sumowania
+    )
+    (
+    input wire [M-1:0] data_bits,
     input wire clk,
     input wire rst,
     
-    output reg [7:0] result
+    output reg [36:0] result,
+    output reg data_rdy
     );
     
-    parameter WIDTH = 8;
+    reg [M-1:0] data_bits_input_reg;
+    reg [5-1:0] counter_reg;
+    reg [5-1:0] counter_reg_delayed;
     
-    reg [15:0] data_bits_input_reg;
-    reg [1:0] counter_reg;
-    reg [1:0] counter_reg_delayed;
+    wire [6-1:0] ones;
+    wire [36:0] shifted_data;
     
-    wire [4:0] ones;
-    wire [7:0] shifted_data;
-    
-    wire [7:0] new_result;
+    wire [36:0] new_result;
     
     always @(posedge clk)
     begin
       if (rst) 
           begin
             data_bits_input_reg <= 0;
+            data_rdy <= 1'b0;
           end
       else 
           begin
@@ -35,7 +40,7 @@ module parallel_adder_16x4(
     begin
       if (rst) 
           begin
-            counter_reg <= 'b0;
+            counter_reg <= 1'b0;
             counter_reg_delayed <= 0;
           end
       else 
@@ -43,6 +48,18 @@ module parallel_adder_16x4(
             counter_reg <= counter_reg + 1'b1;
             counter_reg_delayed <= counter_reg;
           end
+    end
+    
+    always@(*)
+    begin
+        if (counter_reg_delayed == 31)
+        begin
+            data_rdy = 1'b1;
+        end
+        else
+        begin
+            data_rdy = 1'b0;
+        end
     end
     
     number_of_ones ones_counter 
@@ -62,7 +79,7 @@ module parallel_adder_16x4(
     begin
       if (rst) 
           begin
-            result <= 'b0;
+            result <= 1'b0;
           end
       else 
           begin
@@ -70,7 +87,7 @@ module parallel_adder_16x4(
           end
     end
     
-    carry_lookahead_adder #(.WIDTH(WIDTH)) carry_lookahead_inst
+    carry_lookahead_adder #(.WIDTH(37)) carry_lookahead_inst
     (
          .i_add1(shifted_data),
          .i_add2(result),

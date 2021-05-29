@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon May  3 14:13:19 2021
+| Date         : Sat May 29 16:28:56 2021
 | Host         : DESKTOP-CB2MAD1 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file parallel_adder_16x4_utilization_synth.rpt -pb parallel_adder_16x4_utilization_synth.pb
 | Design       : parallel_adder_16x4
@@ -30,11 +30,11 @@ Table of Contents
 +-------------------------+------+-------+-----------+-------+
 |        Site Type        | Used | Fixed | Available | Util% |
 +-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             |   34 |     0 |     17600 |  0.19 |
-|   LUT as Logic          |   34 |     0 |     17600 |  0.19 |
+| Slice LUTs*             |   22 |     0 |     17600 |  0.13 |
+|   LUT as Logic          |   22 |     0 |     17600 |  0.13 |
 |   LUT as Memory         |    0 |     0 |      6000 |  0.00 |
-| Slice Registers         |   26 |     0 |     35200 |  0.07 |
-|   Register as Flip Flop |   26 |     0 |     35200 |  0.07 |
+| Slice Registers         |   79 |     0 |     35200 |  0.22 |
+|   Register as Flip Flop |   79 |     0 |     35200 |  0.22 |
 |   Register as Latch     |    0 |     0 |     35200 |  0.00 |
 | F7 Muxes                |    0 |     0 |      8800 |  0.00 |
 | F8 Muxes                |    0 |     0 |      4400 |  0.00 |
@@ -57,7 +57,7 @@ Table of Contents
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 26    |          Yes |       Reset |            - |
+| 79    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -90,7 +90,7 @@ Table of Contents
 +-----------------------------+------+-------+-----------+-------+
 |          Site Type          | Used | Fixed | Available | Util% |
 +-----------------------------+------+-------+-----------+-------+
-| Bonded IOB                  |   26 |     0 |       100 | 26.00 |
+| Bonded IOB                  |   72 |     0 |       100 | 72.00 |
 | Bonded IPADs                |    0 |     0 |         2 |  0.00 |
 | Bonded IOPADs               |    0 |     0 |       130 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |         2 |  0.00 |
@@ -146,14 +146,14 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |   26 |        Flop & Latch |
-| IBUF     |   18 |                  IO |
-| LUT3     |   15 |                 LUT |
-| LUT6     |   14 |                 LUT |
-| LUT5     |   12 |                 LUT |
-| OBUF     |    8 |                  IO |
-| LUT4     |    3 |                 LUT |
-| LUT2     |    3 |                 LUT |
+| FDRE     |   79 |        Flop & Latch |
+| OBUF     |   38 |                  IO |
+| IBUF     |   34 |                  IO |
+| LUT3     |   18 |                 LUT |
+| LUT5     |   17 |                 LUT |
+| LUT4     |    2 |                 LUT |
+| LUT2     |    2 |                 LUT |
+| LUT6     |    1 |                 LUT |
 | LUT1     |    1 |                 LUT |
 | BUFG     |    1 |               Clock |
 +----------+------+---------------------+
@@ -162,9 +162,13 @@ Table of Contents
 8. Black Boxes
 --------------
 
-+----------+------+
-| Ref Name | Used |
-+----------+------+
++------------------+------+
+|     Ref Name     | Used |
++------------------+------+
+| full_adder       |   37 |
+| number_of_ones   |    1 |
+| bit_shift_module |    1 |
++------------------+------+
 
 
 9. Instantiated Netlists

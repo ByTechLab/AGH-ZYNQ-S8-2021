@@ -1,0 +1,571 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 1904
+License: Customer
+
+Current time: 	Sat May 29 15:09:43 CEST 2021
+Time zone: 	Central European Standard Time (Europe/Belgrade)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1680x1050
+Screen resolution (DPI): 96
+Available screens: 3
+Available disk space: 56 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	H:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	H:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	lacze
+User home directory: C:/Users/lacze
+User working directory: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205
+User country: 	PL
+User language: 	pl
+User locale: 	pl_PL
+
+RDI_BASEROOT: H:/Xilinx/Vivado
+HDI_APPROOT: H:/Xilinx/Vivado/2018.3
+RDI_DATADIR: H:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: H:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/lacze/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/lacze/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/lacze/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	H:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/vivado.log
+Vivado journal file location: 	C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/vivado.jou
+Engine tmp dir: 	C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/.Xil/Vivado-1904-DESKTOP-CB2MAD1
+
+Xilinx Environment Variables
+----------------------------
+XILINX: H:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: H:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: H:/Xilinx/Vivado/2018.3
+XILINX_SDK: H:/Xilinx/SDK/2018.3
+XILINX_VIVADO: H:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: H:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 656 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 103 MB (+105717kb) [00:00:03]
+// [Engine Memory]: 605 MB (+482830kb) [00:00:03]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\lacze\Desktop\AGH-FPGA-S8\AGH-ZYNQ-S8-2021\__OLD_PROJECTS\ADDER_PROJECTS_STANDARD\2 _ANDY_LOOKAHEAD\EBAZ4205\TEST_PROJ.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 720 MB (+88996kb) [00:00:07]
+// [Engine Memory]: 757 MB (+969kb) [00:00:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  1625 ms.
+// Tcl Message: open_project {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205' INFO: [Project 1-313] Project file moved from 'C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [filemgmt 56-1] IP Repository Path: Directory not found as 'C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/ip_repo/cordic_ip_1.0'; using path 'C:/Users/lacze/Desktop/AGH-FPGA-S8/ip_repo/cordic_ip_1.0' instead. INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lacze/Desktop/AGH-FPGA-S8/ip_repo/cordic_ip_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'H:/Xilinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 765 MB. GUI used memory: 49 MB. Current time: 5/29/21, 3:09:46 PM CEST
+// Project name: TEST_PROJ; location: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205; part: xc7z010clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:05 . Memory (MB): peak = 801.465 ; gain = 135.852 
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 807 MB (+12438kb) [00:00:10]
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 112 MB (+3729kb) [00:00:20]
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TEST_BD_wrapper (TEST_BD_wrapper.v)]", 2, true); // B (D, cp) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TEST_BD_wrapper (TEST_BD_wrapper.v)]", 2); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, TEST_BD_wrapper (TEST_BD_wrapper.v)]", 2); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_adder_16x4 (parallel_adder_16x4.v)]", 1); // B (D, cp)
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_adder_16x4 (parallel_adder_16x4.v), carry_lookahead_inst : carry_lookahead_adder (carry_lookahead_adder.v)]", 4); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_adder_16x4 (parallel_adder_16x4.v), carry_lookahead_inst : carry_lookahead_adder (carry_lookahead_adder.v)]", 4); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_adder_16x4 (parallel_adder_16x4.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_adder_16x4 (parallel_adder_16x4.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 28 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v)]", 6); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v)]", 6, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v)]", 6, true); // B (D, cp) - Node
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+selectCodeEditor("parallel_adder_16x4_TB.v", 127, 129); // cl (w, cp)
+// Elapsed time: 109 seconds
+selectCodeEditor("parallel_adder_16x4_TB.v", 384, 284); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 146, 217); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4.v", 0); // k (j, cp)
+selectCodeEditor("parallel_adder_16x4.v", 173, 177); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 120, 167); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 113, 194); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 113, 194, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 26 seconds
+selectCodeEditor("parallel_adder_16x4.v", 91, 329); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 91, 329, false, false, false, false, true); // cl (w, cp) - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v)]", 6); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v), DUT : parallel_adder_16x4 (parallel_adder_16x4.v)]", 7); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v), DUT : parallel_adder_16x4 (parallel_adder_16x4.v), carry_lookahead_inst : carry_lookahead_adder (carry_lookahead_adder.v)]", 10, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v), DUT : parallel_adder_16x4 (parallel_adder_16x4.v), carry_lookahead_inst : carry_lookahead_adder (carry_lookahead_adder.v), genblk1[4].full_adder_inst : full_adder (full_adder.v)]", 15, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4_TB.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4.v", 0); // k (j, cp)
+selectCodeEditor("parallel_adder_16x4.v", 137, 324); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 137, 324, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("parallel_adder_16x4.v", 129, 148); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("parallel_adder_16x4.v", 157, 148); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4.v", 'c'); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 57, 159); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4.v", 'v'); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 102, 161); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 154, 162); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("parallel_adder_16x4.v", 181, 152); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 181, 166); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 202, 184); // cl (w, cp)
+// Elapsed time: 19 seconds
+typeControlKey((HResource) null, "parallel_adder_16x4.v", 'c'); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 277, 232); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 285, 192); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 219, 194); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 248, 204); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 842 MB. GUI used memory: 59 MB. Current time: 5/29/21, 3:15:51 PM CEST
+selectCodeEditor("parallel_adder_16x4.v", 116, 123); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 220, 157); // cl (w, cp)
+// Elapsed time: 46 seconds
+selectCodeEditor("parallel_adder_16x4.v", 184, 44); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 218, 46); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("parallel_adder_16x4.v", 125, 126); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 125, 121); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 125, 113); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 125, 69); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 402, 262); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 68, 76); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4.v", 'v'); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 55, 83); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 97, 63); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 99, 75); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 149, 90); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 147, 82); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 27, 98); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 84, 111); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 155, 286); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("parallel_adder_16x4.v", 142, 96); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 142, 96, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 107, 92); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 107, 92, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 111, 92); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 111, 92, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "parallel_adder_16x4.v", 'c'); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 261, 298); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 261, 298, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "parallel_adder_16x4.v", 'v'); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 219, 242); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 138, 265); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 135, 283); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 184, 200); // cl (w, cp)
+// Elapsed time: 17 seconds
+selectCodeEditor("parallel_adder_16x4.v", 127, 262); // cl (w, cp)
+// Elapsed time: 44 seconds
+selectCodeEditor("parallel_adder_16x4.v", 128, 142); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 167, 160); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 126, 143); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 126, 143, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 133, 39); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 116, 40, false, false, false, true, false); // cl (w, cp) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // af (al, cp)
+// Elapsed time: 19 seconds
+selectCodeEditor("parallel_adder_16x4.v", 131, 210); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 219, 222); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("parallel_adder_16x4.v", 154, 239); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectCodeEditor("parallel_adder_16x4.v", 131, 35); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4.v", 'c'); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 75, 162); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 75, 162, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "parallel_adder_16x4.v", 'v'); // cl (w, cp)
+// Elapsed time: 30 seconds
+selectCodeEditor("parallel_adder_16x4.v", 126, 228); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 72, 278); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 88, 279); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 69, 281); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 82, 280); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4.v", 'c'); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 70, 292); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4.v", 'v'); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 77, 228); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("parallel_adder_16x4.v", 162, 345); // cl (w, cp)
+// Elapsed time: 11 seconds
+selectCodeEditor("parallel_adder_16x4.v", 188, 280); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 294, 313); // cl (w, cp)
+// Elapsed time: 10 seconds
+selectCodeEditor("parallel_adder_16x4.v", 95, 246); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 95, 246, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 175, 248); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 175, 248, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 94, 252); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 94, 252, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 88 seconds
+selectCodeEditor("parallel_adder_16x4.v", 74, 331); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 151, 360); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("parallel_adder_16x4.v", 296, 308); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 13 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_UNDO, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_REDO, (String) null); // B (f, cp)
+selectCodeEditor("parallel_adder_16x4.v", 195, 333); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 249, 327); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 158, 228); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 154, 363); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 193, 300); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 79, 161); // cl (w, cp)
+// Elapsed time: 118 seconds
+selectCodeEditor("parallel_adder_16x4.v", 158, 363); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 158, 363, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 35 seconds
+selectCodeEditor("parallel_adder_16x4.v", 147, 327); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 147, 327, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 18 seconds
+selectCodeEditor("parallel_adder_16x4.v", 92, 179); // cl (w, cp)
+// Elapsed time: 128 seconds
+selectCodeEditor("parallel_adder_16x4.v", 113, 179); // cl (w, cp)
+// Elapsed time: 31 seconds
+selectCodeEditor("parallel_adder_16x4.v", 127, 75); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 127, 75, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 123, 109); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 123, 109, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 131, 75); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 131, 75, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 121, 118); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 121, 118, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 142, 69); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 142, 69, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 125, 112); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 125, 112, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 132, 77); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 132, 77, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 129, 108); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 129, 108, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("parallel_adder_16x4.v", 138, 146); // cl (w, cp)
+// Elapsed time: 300 seconds
+selectCodeEditor("parallel_adder_16x4.v", 216, 194); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("parallel_adder_16x4.v", 279, 202); // cl (w, cp)
+// Elapsed time: 37 seconds
+selectCodeEditor("parallel_adder_16x4.v", 154, 354); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 154, 354, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 150, 379); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 150, 379, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 147, 154); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 147, 154, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 150, 152); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 150, 152); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 150, 152); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 159, 147); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 159, 147, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 151, 183); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 151, 183, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("parallel_adder_16x4.v", 174, 146); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 174, 146, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 108, 202); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 108, 202, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 20 seconds
+selectCodeEditor("parallel_adder_16x4.v", 129, 372); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 129, 372, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 126, 388); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 126, 388, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("parallel_adder_16x4.v", 162, 384); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 162, 384, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v), DUT : parallel_adder_16x4 (parallel_adder_16x4.v), ones_counter : number_of_ones (number_of_ones.v)]", 8, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v), DUT : parallel_adder_16x4 (parallel_adder_16x4.v), ones_counter : number_of_ones (number_of_ones.v)]", 8, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("number_of_ones.v", 89, 58); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 142, 139); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 144, 129); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("number_of_ones.v", 139, 216); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 120, 75); // cl (w, cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("number_of_ones.v", 172, 143); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "carry_lookahead_adder.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4_TB.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4.v", 0); // k (j, cp)
+selectCodeEditor("parallel_adder_16x4.v", 112, 299); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 125, 230); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 125, 230, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 156, 280); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 156, 280, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 115, 282); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 115, 282, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v), DUT : parallel_adder_16x4 (parallel_adder_16x4.v), shifter : bit_shift_module (bit_shift_module.v)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v), DUT : parallel_adder_16x4 (parallel_adder_16x4.v), shifter : bit_shift_module (bit_shift_module.v)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// [GUI Memory]: 119 MB (+1117kb) [00:28:39]
+selectCodeEditor("bit_shift_module.v", 120, 66); // cl (w, cp)
+selectCodeEditor("bit_shift_module.v", 120, 75); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4.v", 0); // k (j, cp)
+selectCodeEditor("parallel_adder_16x4.v", 206, 293); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 206, 293, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4_TB.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bit_shift_module.v", 4); // k (j, cp)
+selectCodeEditor("bit_shift_module.v", 177, 104); // cl (w, cp)
+selectCodeEditor("bit_shift_module.v", 125, 98); // cl (w, cp)
+// Elapsed time: 15 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4.v", 0); // k (j, cp)
+selectCodeEditor("parallel_adder_16x4.v", 196, 318); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 196, 318, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4_TB.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bit_shift_module.v", 4); // k (j, cp)
+// Elapsed time: 25 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4.v", 0); // k (j, cp)
+selectCodeEditor("parallel_adder_16x4.v", 151, 289); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 152, 282); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 152, 282, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "number_of_ones.v", 3); // k (j, cp)
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4.v", 0); // k (j, cp)
+selectCodeEditor("parallel_adder_16x4.v", 111, 296); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 111, 296, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 158, 282); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 158, 282, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bit_shift_module.v", 4); // k (j, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("bit_shift_module.v", 121, 76); // cl (w, cp)
+selectCodeEditor("bit_shift_module.v", 121, 76, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("bit_shift_module.v", 134, 78); // cl (w, cp)
+selectCodeEditor("bit_shift_module.v", 134, 78, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("bit_shift_module.v", 121, 78); // cl (w, cp)
+selectCodeEditor("bit_shift_module.v", 121, 78, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("bit_shift_module.v", 128, 74); // cl (w, cp)
+selectCodeEditor("bit_shift_module.v", 128, 74, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 22 seconds
+selectCodeEditor("bit_shift_module.v", 127, 93); // cl (w, cp)
+// Elapsed time: 28 seconds
+selectCodeEditor("bit_shift_module.v", 179, 115); // cl (w, cp)
+selectCodeEditor("bit_shift_module.v", 124, 96); // cl (w, cp)
+selectCodeEditor("bit_shift_module.v", 124, 96, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("bit_shift_module.v", 190, 90); // cl (w, cp)
+selectCodeEditor("bit_shift_module.v", 190, 90, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4.v", 0); // k (j, cp)
+selectCodeEditor("parallel_adder_16x4.v", 206, 314); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 206, 314, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 156, 247); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 156, 247, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 151, 242); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 151, 242, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 175, 319); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 175, 319, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 165, 329); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 165, 329, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 144, 347); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 144, 347, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 184, 364); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 184, 364, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 24 seconds
+selectCodeEditor("parallel_adder_16x4.v", 251, 238); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 28 seconds
+selectCodeEditor("parallel_adder_16x4.v", 432, 74); // cl (w, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v), DUT : parallel_adder_16x4 (parallel_adder_16x4.v), carry_lookahead_inst : carry_lookahead_adder (carry_lookahead_adder.v)]", 10, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v), DUT : parallel_adder_16x4 (parallel_adder_16x4.v), carry_lookahead_inst : carry_lookahead_adder (carry_lookahead_adder.v)]", 10, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v), DUT : parallel_adder_16x4 (parallel_adder_16x4.v), carry_lookahead_inst : carry_lookahead_adder (carry_lookahead_adder.v)]", 10, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v), DUT : parallel_adder_16x4 (parallel_adder_16x4.v), carry_lookahead_inst : carry_lookahead_adder (carry_lookahead_adder.v), genblk1[3].full_adder_inst : full_adder (full_adder.v)]", 14, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("carry_lookahead_adder.v", 113, 111); // cl (w, cp)
+selectCodeEditor("carry_lookahead_adder.v", 113, 111, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("carry_lookahead_adder.v", 146, 110); // cl (w, cp)
+selectCodeEditor("carry_lookahead_adder.v", 146, 110, false, false, false, false, true); // cl (w, cp) - Double Click
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4_TB.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4.v", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4_TB.v", 1); // k (j, cp)
+// Elapsed time: 10 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4.v", 0); // k (j, cp)
+selectCodeEditor("parallel_adder_16x4.v", 257, 297); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 249, 297); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 322, 337); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 279, 384); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // X (q, cp)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // X (q, cp)
+selectCodeEditor("parallel_adder_16x4.v", 476, 209); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4_TB.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "carry_lookahead_adder.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "number_of_ones.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bit_shift_module.v", 4); // k (j, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4_TB.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4.v", 0); // k (j, cp)
+// Elapsed time: 18 seconds
+selectCodeEditor("parallel_adder_16x4.v", 510, 197); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4_TB.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "carry_lookahead_adder.v", 2); // k (j, cp)
+selectCodeEditor("carry_lookahead_adder.v", 576, 57); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "number_of_ones.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "bit_shift_module.v", 4); // k (j, cp)
+selectCodeEditor("bit_shift_module.v", 486, 95); // cl (w, cp)
+selectCodeEditor("bit_shift_module.v", 325, 127); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "number_of_ones.v", 3); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "carry_lookahead_adder.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4_TB.v", 1); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4.v", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "carry_lookahead_adder.v", 2); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4_TB.v", 1); // k (j, cp)
+// Elapsed time: 27 seconds
+selectCodeEditor("parallel_adder_16x4_TB.v", 106, 87); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4.v", 1); // k (j, cp)
+selectCodeEditor("parallel_adder_16x4.v", 367, 77); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4_TB.v", 0); // k (j, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 201, 73); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4_TB.v", 'v'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4.v", 1); // k (j, cp)
+selectCodeEditor("parallel_adder_16x4.v", 350, 95); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 359, 94); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4.v", 'c'); // cl (w, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4_TB.v", 0); // k (j, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 204, 96); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4_TB.v", 'v'); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 230, 126); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 842 MB. GUI used memory: 61 MB. Current time: 5/29/21, 3:45:51 PM CEST
+selectCodeEditor("parallel_adder_16x4_TB.v", 455, 158); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4_TB.v", 'c'); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 458, 160); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4_TB.v", 'v'); // cl (w, cp)
+// Elapsed time: 41 seconds
+selectCodeEditor("parallel_adder_16x4_TB.v", 322, 174); // cl (w, cp)
+// Elapsed time: 23 seconds
+selectCodeEditor("parallel_adder_16x4_TB.v", 98, 348); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4_TB.v", 'c'); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 117, 354); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 100, 354); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4_TB.v", 'v'); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 57, 195); // cl (w, cp)
+// Elapsed time: 13 seconds
+selectCodeEditor("parallel_adder_16x4_TB.v", 52, 211); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 111, 231); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("parallel_adder_16x4_TB.v", 43, 263); // cl (w, cp)
+// Elapsed time: 32 seconds
+selectCodeEditor("parallel_adder_16x4_TB.v", 136, 287); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 127, 244); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 913, 264); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4_TB.v", 'c'); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 914, 264); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4_TB.v", 'v'); // cl (w, cp)
+// Elapsed time: 16 seconds
+selectCodeEditor("parallel_adder_16x4_TB.v", 191, 264); // cl (w, cp)
+// Elapsed time: 46 seconds
+selectCodeEditor("parallel_adder_16x4_TB.v", 362, 223); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 118, 375); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 142, 332); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 157, 180); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 13 seconds
+selectCodeEditor("parallel_adder_16x4_TB.v", 510, 153); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v), DUT : parallel_adder_16x4 (parallel_adder_16x4.v)]", 7); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '1' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.sim/sim_1/behav/xsim' 
+// TclEventType: LAUNCH_SIM
+// [Engine Memory]: 851 MB (+4440kb) [00:40:32]
+// TclEventType: LOAD_FEATURE
+// Tcl Message: Built simulation snapshot parallel_adder_16x4_TB_behav  ****** Webtalk v2018.3 (64-bit)   **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018   **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.  source C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 -notrace couldn't read file "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2": no such file or directory INFO: [Common 17-206] Exiting Webtalk at Sat May 29 15:50:10 2021... 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "parallel_adder_16x4_TB_behav -key {Behavioral:sim_1:Functional:parallel_adder_16x4_TB} -tclbatch {parallel_adder_16x4_TB.tcl} -protoinst "protoinst_files/TEST_BD.protoinst" -view {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/parallel_adder_16x4_TB_behav.wcfg}} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.3 
+// Elapsed time: 22 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (e)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 

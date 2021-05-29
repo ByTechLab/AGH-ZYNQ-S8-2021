@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="number_of_ones_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1622298238">
+  <File Type="PA-TCL" Name="number_of_ones.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="number_of_ones_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="number_of_ones_reports.tcl"/>
+  <File Type="RDS-RDS" Name="number_of_ones.vds"/>
+  <File Type="RDS-UTIL" Name="number_of_ones_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="number_of_ones_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="number_of_ones.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="number_of_ones_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="number_of_ones_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/number_of_ones">
+    <File Path="$PPRDIR/SOURCE_FILES/number_of_ones.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/number_of_ones/new/number_of_ones_ooc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="out_of_context"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="number_of_ones"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/SOURCE_FILES/number_of_ones.v"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="BlockSrcs" RelSrcDir="$PSRCDIR/number_of_ones">
+    <File Path="$PPRDIR/SOURCE_FILES/number_of_ones.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/number_of_ones/new/number_of_ones_ooc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="out_of_context"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopModule" Val="number_of_ones"/>
+      <Option Name="TopRTLFile" Val="$PPRDIR/SOURCE_FILES/number_of_ones.v"/>
+      <Option Name="UseBlackboxStub" Val="1"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
