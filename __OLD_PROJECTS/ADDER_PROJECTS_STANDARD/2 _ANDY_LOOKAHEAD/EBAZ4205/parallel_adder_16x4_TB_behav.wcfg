@@ -11,13 +11,13 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="12666667fs"></ZoomStartTime>
-      <ZoomEndTime time="291666668fs"></ZoomEndTime>
-      <Cursor1Time time="65500000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="911000001fs"></ZoomEndTime>
+      <Cursor1Time time="170000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="175"></NameColumnWidth>
-      <ValueColumnWidth column_width="88"></ValueColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="10" />
    <wvobject fp_name="/parallel_adder_16x4_TB/clk" type="logic">

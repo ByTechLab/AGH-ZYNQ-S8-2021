@@ -28,7 +28,6 @@ module parallel_adder_16x4
       if (rst) 
           begin
             data_bits_input_reg <= 0;
-            data_rdy <= 1'b0;
           end
       else 
           begin

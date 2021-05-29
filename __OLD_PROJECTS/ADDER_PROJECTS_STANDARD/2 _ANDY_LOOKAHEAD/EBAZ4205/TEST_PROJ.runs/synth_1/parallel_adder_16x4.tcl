@@ -30,14 +30,11 @@ set_property ip_repo_paths c:/Users/lacze/Desktop/AGH-FPGA-S8/ip_repo/cordic_ip_
 update_ip_catalog
 set_property ip_output_repo {c:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-add_files -quiet {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.runs/number_of_ones_synth_1/number_of_ones.dcp}}
-set_property used_in_implementation false [get_files {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.runs/number_of_ones_synth_1/number_of_ones.dcp}}]
-add_files -quiet {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.runs/bit_shift_module_synth_1/bit_shift_module.dcp}}
-set_property used_in_implementation false [get_files {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.runs/bit_shift_module_synth_1/bit_shift_module.dcp}}]
-add_files -quiet {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.runs/full_adder_synth_1/full_adder.dcp}}
-set_property used_in_implementation false [get_files {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.runs/full_adder_synth_1/full_adder.dcp}}]
 read_verilog -library xil_defaultlib {
+  {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/bit_shift_module.v}
   {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/carry_lookahead_adder.v}
+  {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/full_adder.v}
+  {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/number_of_ones.v}
   {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -48,13 +45,22 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc -mode out_of_context {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/number_of_ones/new/number_of_ones_ooc.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/number_of_ones/new/number_of_ones_ooc.xdc}}]
+
+read_xdc -mode out_of_context {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/bit_shift_module/new/bit_shift_module_ooc.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/bit_shift_module/new/bit_shift_module_ooc.xdc}}]
+
+read_xdc -mode out_of_context {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/full_adder/new/full_adder_ooc.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/full_adder/new/full_adder_ooc.xdc}}]
+
 read_xdc {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/constrs_1/new/constr_main.xdc}}
 set_property used_in_implementation false [get_files {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/constrs_1/new/constr_main.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top parallel_adder_16x4 -part xc7z010clg400-1
+synth_design -top parallel_adder_16x4 -part xc7z010clg400-1 -mode out_of_context
 
 
 # disable binary constraint mode for synth run checkpoints

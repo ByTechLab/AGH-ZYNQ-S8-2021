@@ -6,4 +6,4 @@
 # is provided to the module when set as out-of-context.
 # Here is an example:
 
-create_clock -name clk_200 -period 10 [get_ports clk]
+create_clock -name clk_200 -period 20 [get_ports clk]

@@ -104,3 +104,76 @@ wait_on_run impl_1
 close_design
 open_run impl_1
 close_design
+delete_fileset [get_filesets number_of_ones] -merge [current_fileset]
+delete_fileset [get_filesets bit_shift_module] -merge [current_fileset]
+delete_fileset [get_filesets full_adder] -merge [current_fileset]
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+open_run impl_1
+set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode Out_of_context} -objects [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+close_design
+set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_clock_networks -name {network_1}
+report_clock_interaction -delay_type min_max -significant_digits 3 -name timing_1
+report_drc -name drc_1 -ruledecks {default}
+report_ssn -name ssn_1
+report_operating_conditions -grade -return_string
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+close_design
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1
+close_design
+launch_simulation
+open_wave_config {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/parallel_adder_16x4_TB_behav.wcfg}
+source parallel_adder_16x4_TB.tcl
+save_wave_config {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/parallel_adder_16x4_TB_behav.wcfg}
