@@ -1,0 +1,548 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 11192
+License: Customer
+
+Current time: 	Sat May 29 18:25:41 CEST 2021
+Time zone: 	Central European Standard Time (Europe/Belgrade)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 1680x1050
+Screen resolution (DPI): 96
+Available screens: 3
+Available disk space: 55 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	H:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	H:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	lacze
+User home directory: C:/Users/lacze
+User working directory: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205
+User country: 	PL
+User language: 	pl
+User locale: 	pl_PL
+
+RDI_BASEROOT: H:/Xilinx/Vivado
+HDI_APPROOT: H:/Xilinx/Vivado/2018.3
+RDI_DATADIR: H:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: H:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/lacze/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/lacze/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/lacze/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	H:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/vivado.log
+Vivado journal file location: 	C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/vivado.jou
+Engine tmp dir: 	C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/.Xil/Vivado-11192-DESKTOP-CB2MAD1
+
+Xilinx Environment Variables
+----------------------------
+XILINX: H:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: H:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: H:/Xilinx/Vivado/2018.3
+XILINX_SDK: H:/Xilinx/SDK/2018.3
+XILINX_VIVADO: H:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: H:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 697 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 65 MB (+65489kb) [00:00:03]
+// [Engine Memory]: 614 MB (+492075kb) [00:00:03]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\lacze\Desktop\AGH-FPGA-S8\AGH-ZYNQ-S8-2021\__OLD_PROJECTS\ADDER_PROJECTS_STANDARD\2 _ANDY_LOOKAHEAD\EBAZ4205\TEST_PROJ.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205' 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 92 MB (+25323kb) [00:00:07]
+// [Engine Memory]: 724 MB (+83336kb) [00:00:07]
+// [GUI Memory]: 110 MB (+13533kb) [00:00:07]
+// [Engine Memory]: 762 MB (+2119kb) [00:00:08]
+// WARNING: HEventQueue.dispatchEvent() is taking  1642 ms.
+// Tcl Message: open_project {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.xpr} 
+// Tcl Message: INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. Current project path is 'C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205' 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/lacze/Desktop/AGH-FPGA-S8/ip_repo/cordic_ip_1.0'. INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'H:/Xilinx/Vivado/2018.3/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 773 MB. GUI used memory: 49 MB. Current time: 5/29/21, 6:25:44 PM CEST
+// Project name: TEST_PROJ; location: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bx (cp)
+// [Engine Memory]: 815 MB (+15220kb) [00:00:09]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 1034 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_adder_16x4 (parallel_adder_16x4.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_adder_16x4 (parallel_adder_16x4.v)]", 1, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Elapsed time: 52 seconds
+selectCodeEditor("parallel_adder_16x4.v", 90, 310); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 94, 310, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("parallel_adder_16x4.v", 94, 310); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 159, 320); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 191, 313); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4.v", 191, 313, false, false, false, false, true); // cl (w, cp) - Double Click
+// HMemoryUtils.trashcanNow. Engine heap size: 815 MB. GUI used memory: 58 MB. Current time: 5/29/21, 6:55:48 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 815 MB. GUI used memory: 56 MB. Current time: 5/29/21, 7:25:49 PM CEST
+// Elapsed time: 4033 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, cp)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "parallel_adder_16x4.v", 1); // k (j, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 8); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 9); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v)]", 10, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, parallel_adder_16x4_TB (parallel_adder_16x4_TB.v)]", 10, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+selectCodeEditor("parallel_adder_16x4_TB.v", 133, 179); // cl (w, cp)
+typeControlKey((HResource) null, "parallel_adder_16x4_TB.v", 'c'); // cl (w, cp)
+selectCodeEditor("parallel_adder_16x4_TB.v", 201, 264); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 815 MB. GUI used memory: 55 MB. Current time: 5/29/21, 7:55:49 PM CEST
+// HMemoryUtils.trashcanNow. Engine heap size: 815 MB. GUI used memory: 55 MB. Current time: 5/29/21, 8:25:49 PM CEST
+// Elapsed time: 2607 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_adder_16x4 (parallel_adder_16x4.v), ones_counter : number_of_ones (number_of_ones.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_adder_16x4 (parallel_adder_16x4.v), ones_counter : number_of_ones (number_of_ones.v)]", 2, false, false, false, false, true, false); // B (D, cp) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top number_of_ones [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// [Engine Memory]: 857 MB (+1433kb) [02:09:20]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cp): Elaborate Design: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 857 MB. GUI used memory: 56 MB. Current time: 5/29/21, 8:35:00 PM CEST
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7z010clg400-1 Top: number_of_ones 
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,167 MB. GUI used memory: 56 MB. Current time: 5/29/21, 8:35:08 PM CEST
+// [Engine Memory]: 1,175 MB (+288905kb) [02:09:33]
+// [Engine Memory]: 1,268 MB (+35767kb) [02:09:33]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// [Engine Memory]: 1,361 MB (+30572kb) [02:09:34]
+// Schematic: addNotify
+// [GUI Memory]: 127 MB (+12163kb) [02:09:34]
+// WARNING: HEventQueue.dispatchEvent() is taking  1065 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 927.066 ; gain = 22.012 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'number_of_ones' [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/number_of_ones.v:3] INFO: [Synth 8-6155] done synthesizing module 'number_of_ones' (1#1) [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/number_of_ones.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 969.656 ; gain = 64.602 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 969.656 ; gain = 64.602 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 969.656 ; gain = 64.602 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Device 21-403] Loading part xc7z010clg400-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/constrs_1/new/constr_main.xdc] 
+// Tcl Message: Finished Parsing XDC File [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/constrs_1/new/constr_main.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1292.172 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 1397.570 ; gain = 492.516 
+// Tcl Message: 6 Infos, 1 Warnings, 1 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// Tcl Message: synth_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 1397.570 ; gain = 492.516 
+// 'dQ' command handler elapsed time: 12 seconds
+// S (cp): Critical Messages: addNotify
+// Elapsed time: 10 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+// [GUI Memory]: 141 MB (+8244kb) [02:09:35]
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("RTL Analysis", "Elaborated Design", "DesignTask.RTL_PLANNING");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close : addNotify
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,365 MB. GUI used memory: 89 MB. Current time: 5/29/21, 8:35:18 PM CEST
+// Engine heap size: 1,365 MB. GUI used memory: 90 MB. Current time: 5/29/21, 8:35:18 PM CEST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bx (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_adder_16x4 (parallel_adder_16x4.v)]", 1, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_adder_16x4 (parallel_adder_16x4.v)]", 1, true, false, false, false, true, false); // B (D, cp) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ac (al, cp)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ac (al, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SET_AS_TOP, "Set as Top"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SET_AS_TOP
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: set_property top parallel_adder_16x4 [current_fileset] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7z010clg400-1 Top: parallel_adder_16x4 
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FINISH
+// TclEventType: READ_XDC_FILE_START
+// TclEventType: POWER_CNS_STALE
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: READ_XDC_FILE_END
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,365 MB. GUI used memory: 68 MB. Current time: 5/29/21, 8:35:32 PM CEST
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Schematic: addNotify
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1399.918 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'parallel_adder_16x4' [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v:3] 
+// Tcl Message: 	Parameter M bound to: 32 - type: integer  	Parameter N bound to: 32 - type: integer  
+// Tcl Message: 	Parameter WIDTH bound to: 37 - type: integer  
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'full_adder' [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/full_adder.v:3] INFO: [Synth 8-6155] done synthesizing module 'full_adder' (3#1) [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/full_adder.v:3] INFO: [Synth 8-6155] done synthesizing module 'carry_lookahead_adder' (4#1) [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/carry_lookahead_adder.v:3] 
+// Tcl Message: INFO: [Synth 8-6155] done synthesizing module 'parallel_adder_16x4' (5#1) [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1399.918 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message:  Report Check Netlist:  +------+------------------+-------+---------+-------+------------------+ |      |Item              |Errors |Warnings |Status |Description       | +------+------------------+-------+---------+-------+------------------+ |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets | +------+------------------+-------+---------+-------+------------------+ --------------------------------------------------------------------------------- Start Handling Custom Attributes --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1399.918 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1399.918 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message:  Processing XDC Constraints Initializing timing engine Parsing XDC File [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/constrs_1/new/constr_main.xdc] Finished Parsing XDC File [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/constrs_1/new/constr_main.xdc] Completed Processing XDC Constraints  
+// Tcl Message: INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s). 
+// Tcl Message: Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1399.918 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Tcl Message: RTL Elaboration Complete:  : Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1399.918 ; gain = 0.000 
+// Tcl Message: 13 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered. synth_design completed successfully 
+// 'dQ' command handler elapsed time: 5 seconds
+dismissDialog("Open Elaborated Design"); // bx (cp)
+dismissDialog("Critical Messages"); // S (cp)
+// [GUI Memory]: 151 MB (+2730kb) [02:13:41]
+// Elapsed time: 358 seconds
+selectButton(PAResourceTtoZ.TaskBanner_CLOSE, (String) null); // k (aA, cp)
+closeTask("RTL Analysis", "Elaborated Design", "DesignTask.RTL_PLANNING");
+// A (cp): Confirm Close: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Close : addNotify
+dismissDialog("Confirm Close"); // A (cp)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,365 MB. GUI used memory: 90 MB. Current time: 5/29/21, 8:41:38 PM CEST
+// Engine heap size: 1,365 MB. GUI used memory: 91 MB. Current time: 5/29/21, 8:41:38 PM CEST
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Close"); // bx (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_adder_16x4 (parallel_adder_16x4.v), ones_counter : number_of_ones (number_of_ones.v)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, parallel_adder_16x4 (parallel_adder_16x4.v), ones_counter : number_of_ones (number_of_ones.v)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Elapsed time: 15 seconds
+selectCodeEditor("number_of_ones.v", 78, 284); // cl (w, cp)
+typeControlKey((HResource) null, "number_of_ones.v", 'c'); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 69, 304); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 214, 437); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 75, 286); // cl (w, cp)
+typeControlKey(null, null, 'z');
+selectCodeEditor("number_of_ones.v", 85, 38); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 85, 38, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "number_of_ones.v", 'c'); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 89, 281); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 44, 313); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 29, 308); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 145, 134); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 145, 134, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "number_of_ones.v", 'v'); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 188, 94); // cl (w, cp)
+selectButton(PAResourceQtoS.SrcFilePropPanels_TYPE, (String) null); // q (ci, cp)
+// Y (cp): Set Type: addNotify
+selectComboBox(PAResourceQtoS.SrcFileTypeComboBox_SOURCE_FILE_TYPE, "VHDL", 3); // cj (Q, Y)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (Y)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property file_type VHDL [get_files  {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/number_of_ones.v}}] 
+dismissDialog("Set Type"); // Y (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7z010clg400-1 Top: parallel_adder_16x4 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1399.918 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'parallel_adder_16x4' [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v:3] 
+// Tcl Message: 	Parameter M bound to: 32 - type: integer  	Parameter N bound to: 32 - type: integer  
+// Tcl Message: ERROR: [Synth 8-439] module 'number_of_ones' not found [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v:64] ERROR: [Synth 8-6156] failed synthesizing module 'parallel_adder_16x4' [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1399.918 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// S (cp): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+selectCodeEditor("number_of_ones.v", 241, 313); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("number_of_ones.v", 208, 442); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 162, 128); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 162, 128, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "number_of_ones.v", 'v'); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 89, 279); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("number_of_ones.v", 97, 47); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 151, 11); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 20, 49); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 21, 31); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 46, 128); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 23, 22); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// A (cp): Elaborate Design: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// TclEventType: ELABORATE_START
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7z010clg400-1 Top: parallel_adder_16x4 
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1399.918 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'parallel_adder_16x4' [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v:3] 
+// Tcl Message: 	Parameter M bound to: 32 - type: integer  	Parameter N bound to: 32 - type: integer  
+// Tcl Message: ERROR: [Synth 8-439] module 'number_of_ones' not found [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v:64] ERROR: [Synth 8-6156] failed synthesizing module 'parallel_adder_16x4' [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1399.918 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// S (cp): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+// Elapsed time: 14 seconds
+selectCodeEditor("number_of_ones.v", 117, 39); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 117, 39, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "number_of_ones.v", 'c'); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 116, 347); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 116, 347, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "number_of_ones.v", 'v'); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 284, 368); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 122, 45); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("number_of_ones.v", 227, 83); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("number_of_ones.v", 139, 406); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 139, 406, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "number_of_ones.v", 'c'); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 104, 96); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 104, 96, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "number_of_ones.v", 'v'); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 124, 202); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 1, 94); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 225, 208); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 243, 42); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 243, 42); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 243, 42, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 10 seconds
+selectCodeEditor("number_of_ones.v", 138, 379); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("number_of_ones.v", 96, 276); // cl (w, cp)
+// Elapsed time: 18 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 12); // B (D, cp)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 12); // B (D, cp)
+// Elapsed time: 77 seconds
+selectCodeEditor("number_of_ones.v", 389, 279); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 389, 279, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 35 seconds
+selectCodeEditor("number_of_ones.v", 150, 84); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 149, 68); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("number_of_ones.v", 685, 383); // cl (w, cp)
+typeControlKey((HResource) null, "number_of_ones.v", 'c'); // cl (w, cp)
+// Elapsed time: 192 seconds
+selectCodeEditor("number_of_ones.v", 288, 292); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 223, 436); // cl (w, cp)
+typeControlKey((HResource) null, "number_of_ones.v", 'v'); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 164, 245); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 164, 245, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 11 seconds
+selectCodeEditor("number_of_ones.v", 65, 190); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 65, 190, false, false, false, false, true); // cl (w, cp) - Double Click
+// Elapsed time: 103 seconds
+selectCodeEditor("number_of_ones.v", 223, 322); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("number_of_ones.v", 121, 44); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 121, 44, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "number_of_ones.v", 'c'); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 44, 335); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 44, 335, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "number_of_ones.v", 'v'); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 125, 432); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 125, 432, false, false, false, false, true); // cl (w, cp) - Double Click
+typeControlKey((HResource) null, "number_of_ones.v", 'v'); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 195, 353); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 108, 285); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 71, 54); // cl (w, cp)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("number_of_ones.v", 165, 11); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 21, 59); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 23, 71); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 1, 25, false, false, false, false, true); // cl (w, cp) - Double Click
+selectCodeEditor("number_of_ones.v", 74, 147); // cl (w, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12, true); // u (Q, cp) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_RTL_DESIGN
+// al (cp): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (al)
+// bx (cp):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// A (cp): Elaborate Design: addNotify
+dismissDialog("Save Project"); // al (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (A)
+// bx (cp):  Open Elaborated Design : addNotify
+dismissDialog("Elaborate Design"); // A (cp)
+// Tcl Message: synth_design -rtl -name rtl_1 
+// Tcl Message: Command: synth_design -rtl -name rtl_1 Starting synth_design Using part: xc7z010clg400-1 Top: parallel_adder_16x4 
+// TclEventType: ELABORATE_START
+// TclEventType: ELABORATE_FAIL
+// TclEventType: DESIGN_NEW_FAILED
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1399.918 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: INFO: [Synth 8-6157] synthesizing module 'parallel_adder_16x4' [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v:3] 
+// Tcl Message: 	Parameter M bound to: 32 - type: integer  	Parameter N bound to: 32 - type: integer  
+// Tcl Message: ERROR: [Synth 8-439] module 'number_of_ones' not found [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v:64] ERROR: [Synth 8-6156] failed synthesizing module 'parallel_adder_16x4' [C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/SOURCE_FILES/parallel_adder_16x4.v:3] 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1399.918 ; gain = 0.000 
+// Tcl Message: --------------------------------------------------------------------------------- 
+// Tcl Message: RTL Elaboration failed 
+// Tcl Message: 1 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered. synth_design failed 
+// Tcl Message: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details 
+// CommandFailedException: ERROR: [Common 17-69] Command failed: ERROR: [Vivado_Tcl 4-5] Elaboration failed - please see the console for details  
+// 'dQ' command handler elapsed time: 5 seconds
+// S (cp): Critical Messages: addNotify
+dismissDialog("Open Elaborated Design"); // bx (cp)
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (S)
+dismissDialog("Critical Messages"); // S (cp)
+selectCodeEditor("number_of_ones.v", 158, 291); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 140, 186); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 75, 70); // cl (w, cp)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 23 seconds
+selectCodeEditor("number_of_ones.v", 60, 90); // cl (w, cp)
+// Elapsed time: 44 seconds
+selectCodeEditor("number_of_ones.v", 309, 343); // cl (w, cp)
+selectCodeEditor("number_of_ones.v", 226, 441); // cl (w, cp)
+typeControlKey((HResource) null, "number_of_ones.v", 'c'); // cl (w, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,365 MB. GUI used memory: 70 MB. Current time: 5/29/21, 9:11:40 PM CEST

@@ -1,0 +1,185 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May 29 15:51:11 2021
+# Process ID: 8568
+# Current directory: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16324 C:\Users\lacze\Desktop\AGH-FPGA-S8\AGH-ZYNQ-S8-2021\__OLD_PROJECTS\ADDER_PROJECTS_STANDARD\2 _ANDY_LOOKAHEAD\EBAZ4205\TEST_PROJ.xpr
+# Log file: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/vivado.log
+# Journal file: C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/parallel_adder_16x4_TB_behav.wcfg}
+source parallel_adder_16x4_TB.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+current_wave_config {parallel_adder_16x4_TB_behav.wcfg}
+add_wave {{/parallel_adder_16x4_TB/data_rdy}} 
+run all
+relaunch_sim
+save_wave_config {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/parallel_adder_16x4_TB_behav.wcfg}
+save_wave_config {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/parallel_adder_16x4_TB_behav.wcfg}
+save_wave_config {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/parallel_adder_16x4_TB_behav.wcfg}
+save_wave_config {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/parallel_adder_16x4_TB_behav.wcfg}
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+reset_run synth_1
+create_fileset -blockset -define_from number_of_ones number_of_ones
+file mkdir {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/number_of_ones/new}
+close [ open {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/number_of_ones/new/number_of_ones_ooc.xdc} w ]
+add_files -fileset number_of_ones {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/number_of_ones/new/number_of_ones_ooc.xdc}}
+set data {# (c) Copyright 2014 Xilinx, Inc. All rights reserved.
+
+# Add in a clock definition for each input clock to the out-of-context module.
+# The module will be synthesized as top so reference the clock origin using get_ports.
+# You will need to define a clock on each input clock port, no top level clock information
+# is provided to the module when set as out-of-context.
+# Here is an example:
+# create_clock -name clk_200 -period 5 [get_ports clk]
+}
+set filename "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/number_of_ones/new/number_of_ones_ooc.xdc"
+set fileId [open $filename "w"]
+puts -nonewline $fileId $data
+close $fileId
+set_property USED_IN {out_of_context synthesis implementation}  [get_files  {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/number_of_ones/new/number_of_ones_ooc.xdc}}]
+create_fileset -blockset -define_from bit_shift_module bit_shift_module
+file mkdir {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/bit_shift_module/new}
+close [ open {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/bit_shift_module/new/bit_shift_module_ooc.xdc} w ]
+add_files -fileset bit_shift_module {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/bit_shift_module/new/bit_shift_module_ooc.xdc}}
+set data {# (c) Copyright 2014 Xilinx, Inc. All rights reserved.
+
+# Add in a clock definition for each input clock to the out-of-context module.
+# The module will be synthesized as top so reference the clock origin using get_ports.
+# You will need to define a clock on each input clock port, no top level clock information
+# is provided to the module when set as out-of-context.
+# Here is an example:
+# create_clock -name clk_200 -period 5 [get_ports clk]
+}
+set filename "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/bit_shift_module/new/bit_shift_module_ooc.xdc"
+set fileId [open $filename "w"]
+puts -nonewline $fileId $data
+close $fileId
+set_property USED_IN {out_of_context synthesis implementation}  [get_files  {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/bit_shift_module/new/bit_shift_module_ooc.xdc}}]
+create_fileset -blockset -define_from carry_lookahead_adder carry_lookahead_adder
+create_fileset -blockset -define_from full_adder full_adder
+file mkdir {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/full_adder/new}
+close [ open {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/full_adder/new/full_adder_ooc.xdc} w ]
+add_files -fileset full_adder {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/full_adder/new/full_adder_ooc.xdc}}
+set data {# (c) Copyright 2014 Xilinx, Inc. All rights reserved.
+
+# Add in a clock definition for each input clock to the out-of-context module.
+# The module will be synthesized as top so reference the clock origin using get_ports.
+# You will need to define a clock on each input clock port, no top level clock information
+# is provided to the module when set as out-of-context.
+# Here is an example:
+# create_clock -name clk_200 -period 5 [get_ports clk]
+}
+set filename "C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/full_adder/new/full_adder_ooc.xdc"
+set fileId [open $filename "w"]
+puts -nonewline $fileId $data
+close $fileId
+set_property USED_IN {out_of_context synthesis implementation}  [get_files  {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/full_adder/new/full_adder_ooc.xdc}}]
+close [ open {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/constrs_1/new/constr_main.xdc} w ]
+add_files -fileset constrs_1 {{C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/TEST_PROJ.srcs/constrs_1/new/constr_main.xdc}}
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+close_design
+open_run impl_1
+close_design
+delete_fileset [get_filesets number_of_ones] -merge [current_fileset]
+delete_fileset [get_filesets bit_shift_module] -merge [current_fileset]
+delete_fileset [get_filesets full_adder] -merge [current_fileset]
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+open_run impl_1
+set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode Out_of_context} -objects [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+close_design
+set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_clock_networks -name {network_1}
+report_clock_interaction -delay_type min_max -significant_digits 3 -name timing_1
+report_drc -name drc_1 -ruledecks {default}
+report_ssn -name ssn_1
+report_operating_conditions -grade -return_string
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_2
+close_design
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
+open_run synth_1 -name synth_1
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_utilization -name utilization_1
+close_design
+launch_simulation
+open_wave_config {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/parallel_adder_16x4_TB_behav.wcfg}
+source parallel_adder_16x4_TB.tcl
+save_wave_config {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/parallel_adder_16x4_TB_behav.wcfg}
+save_wave_config {C:/Users/lacze/Desktop/AGH-FPGA-S8/AGH-ZYNQ-S8-2021/__OLD_PROJECTS/ADDER_PROJECTS_STANDARD/2 _ANDY_LOOKAHEAD/EBAZ4205/parallel_adder_16x4_TB_behav.wcfg}
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+open_run synth_1 -name synth_1

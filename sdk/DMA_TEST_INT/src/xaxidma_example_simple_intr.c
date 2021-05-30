@@ -394,6 +394,7 @@ int main(void)
 		// Start Osciloscope time Measurement <<===============>>
 		XGpio_WriteReg((GPIO_REG_BASEADDR),((LED_CHANNEL - 1) * XGPIO_CHAN_OFFSET) + XGPIO_DATA_OFFSET, ~LED);
 
+
 //		Status = XAxiDma_SimpleTransfer(&AxiDma,(UINTPTR) RxBufferPtr,MAX_PKT_LEN, XAXIDMA_DEVICE_TO_DMA);
 		Status = XAxiDma_SimpleTransfer(&AxiDma,(UINTPTR) RxBufferPtr,2*4, XAXIDMA_DEVICE_TO_DMA); // Receive one byte
 
