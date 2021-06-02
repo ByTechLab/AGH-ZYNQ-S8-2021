@@ -1,3 +1,5 @@
+create_clock -name clk_200 -period 10 [get_ports clk]
+
 set_property IOSTANDARD LVCMOS33 [get_ports MDIO_ETHERNET_0_0_mdc]
 set_property IOSTANDARD LVCMOS33 [get_ports MDIO_ETHERNET_0_0_mdio_io]
 
