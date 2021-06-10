@@ -2,7 +2,7 @@
 ## Andrzej Laczewski Paweł Wargacki
 
 
-Link do wstępnej wersji raportu:
+Link do raportu:
 [AGH___SDUP___FPGA___S8.pdf](https://github.com/ByTechLab/AGH-ZYNQ-S8-2021/blob/main/docs/AGH___SDUP___FPGA___S8.pdf)
 
 
